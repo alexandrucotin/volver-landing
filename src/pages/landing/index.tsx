@@ -14,7 +14,12 @@ const LandingPage: React.FC = () => {
         <h1 className="landing-page-content-slogan">
           Where creativity comes <br /> full circle
         </h1>
-        <button className="landing-page-content-cta">Contact Us</button>
+        <a
+          href="mailto:info@volver.studio?subject=Richiesta-Informazioni"
+          className="landing-page-content-cta"
+        >
+          Contact Us
+        </a>
       </div>
     </div>
   );
