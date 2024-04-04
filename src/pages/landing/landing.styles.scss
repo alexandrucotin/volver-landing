@@ -46,7 +46,6 @@
     }
 
     &-cta {
-      border: none;
       border-radius: 20px;
       padding: 0.5rem 1rem;
       font-weight: bold;
@@ -54,6 +53,8 @@
       color: white;
       font-size: 1rem;
       transition: box-shadow 0.3s ease-in-out;
+      text-decoration: none;
+      font-family: Abril;
 
       &:hover {
         cursor: pointer;
