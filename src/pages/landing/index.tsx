@@ -7,11 +7,11 @@ import ImagesContainer from "../../components/organisms/images-section";
 const LandingPage: React.FC = () => {
   const targetRef = useRef<HTMLDivElement>(null);
   return (
-    <div className="new-landing-page">
-      <div className="new-landing-page-content">
+    <div className="landing-page">
+      <div className="landing-page-images-container">
         <ImagesContainer images={data.imgs} />
-        <MainLogo targetRef={targetRef} />
       </div>
+      <MainLogo targetRef={targetRef} />
       <div className="" ref={targetRef}>
         <Services />
       </div>

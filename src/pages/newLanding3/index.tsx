@@ -13,9 +13,26 @@ const ParallaxImage: React.FC<ParallaxImageProps> = ({ src, overlayColor }) => {
   const [elementHeight, setElementHeight] = useState(0);
 
   useEffect(() => {
-    console.log("elementTop", elementTop);
-    console.log("elementHeight", elementHeight);
-  }, [elementTop, elementHeight]);
+    scrollY.onChange((value) => {
+      console.group("SCROLL");
+      console.log("elementTop", elementTop);
+      console.log("scrollY", value);
+      console.log(
+        "elementTop - window.innerHeight ",
+        elementTop - window.innerHeight
+      );
+      console.log(
+        "elementTop - window.innerHeight /2",
+        elementTop - window.innerHeight / 2
+      );
+      console.log(
+        "elementTop + elementHeight / 2",
+        elementTop + elementHeight / 2
+      );
+      console.log("elementTop + elementHeight ", elementTop + elementHeight);
+      console.groupEnd();
+    });
+  }, [elementTop, scrollY, elementHeight]);
 
   useEffect(() => {
     const element = ref.current;
@@ -29,12 +46,12 @@ const ParallaxImage: React.FC<ParallaxImageProps> = ({ src, overlayColor }) => {
   const opacity = useTransform(
     scrollY,
     [
-      elementTop - window.innerHeight,
+      elementTop - window.innerHeight + elementHeight,
       elementTop - window.innerHeight / 2,
-      elementTop + elementHeight / 2,
-      elementTop + elementHeight,
+      elementTop,
+      elementTop + elementHeight / 1.5,
     ],
-    [1.2, 0, 0.2, 1.2]
+    [1, 0, 0, 1]
   );
 
   return (
@@ -62,13 +79,17 @@ const ParallaxImage: React.FC<ParallaxImageProps> = ({ src, overlayColor }) => {
 const NewLandingPage3: React.FC = () => {
   return (
     <div>
-      {Array.from({ length: 4 }).map((_, index) => (
-        <div key={index}>
-          <ParallaxImage
-            src="https://globalnews.ca/wp-content/uploads/2023/05/Screen-Shot-2023-04-21-at-9.22.06-AM.png?w=1200"
-            overlayColor="rgba(255, 0, 0, 0.5)"
-          />
-          <ParallaxImage
+      <ParallaxImage
+        src="https://globalnews.ca/wp-content/uploads/2023/05/Screen-Shot-2023-04-21-at-9.22.06-AM.png?w=1200"
+        overlayColor="rgba(255, 0, 0)"
+      />
+
+      <div style={{ height: "100vh" }}></div>
+      <ParallaxImage
+        src="https://globalnews.ca/wp-content/uploads/2023/05/Screen-Shot-2023-04-21-at-9.22.06-AM.png?w=1200"
+        overlayColor="rgba(255, 0, 0)"
+      />
+      {/*           <ParallaxImage
             src="https://globalnews.ca/wp-content/uploads/2023/05/Screen-Shot-2023-04-21-at-9.22.06-AM.png?w=1200"
             overlayColor="rgba(0, 255, 0, 0.5)"
           />
@@ -79,9 +100,9 @@ const NewLandingPage3: React.FC = () => {
           <ParallaxImage
             src="https://globalnews.ca/wp-content/uploads/2023/05/Screen-Shot-2023-04-21-at-9.22.06-AM.png?w=1200"
             overlayColor="rgba(255, 0, 0, 0.5)"
-          />
-        </div>
-      ))}
+          /> */}
+
+      <div style={{ height: "100vh" }}></div>
     </div>
   );
 };
