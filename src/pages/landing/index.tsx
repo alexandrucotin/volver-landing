@@ -1,25 +1,19 @@
-import React from "react";
-import volverLogo from "../../assets/logo.png";
+import React, { useRef } from "react";
+import data from "../../assets/data/images.json";
+import Services from "../../components/organisms/services-section";
+import MainLogo from "../../components/molecules/main-logo";
+import ImagesContainer from "../../components/organisms/images-section";
 
 const LandingPage: React.FC = () => {
+  const targetRef = useRef<HTMLDivElement>(null);
   return (
-    <div className="landing-page">
-      <div className="landing-page-logo-container">
-        <img src={volverLogo} alt="Volver studio logo" />
+    <div className="new-landing-page">
+      <div className="new-landing-page-content">
+        <ImagesContainer images={data.imgs} />
+        <MainLogo targetRef={targetRef} />
       </div>
-      <div className="landing-page-content">
-        <div className="landing-page-content-work-in-progress">
-          Website work in progress
-        </div>
-        <h1 className="landing-page-content-slogan">
-          Where creativity comes <br /> full circle
-        </h1>
-        <a
-          href="mailto:info@volver.studio?subject=Richiesta-Informazioni"
-          className="landing-page-content-cta"
-        >
-          Contact Us
-        </a>
+      <div className="" ref={targetRef}>
+        <Services />
       </div>
     </div>
   );
