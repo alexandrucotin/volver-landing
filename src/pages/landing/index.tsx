@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import data from "../../assets/data/images.json";
 import Services from "../../components/organisms/services-section";
-import MainLogo from "../../components/molecules/main-logo";
 import ImagesContainer from "../../components/organisms/images-section";
 
 const LandingPage: React.FC = () => {
