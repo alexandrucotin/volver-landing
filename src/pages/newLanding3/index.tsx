@@ -1,110 +1,129 @@
 import React, { useRef, useEffect, useState } from "react";
-import { motion, useTransform, useScroll } from "framer-motion";
+import { motion, useTransform, useScroll, MotionValue } from "framer-motion";
+import data from "../../assets/data/images.json";
+import { useResponsiveValues } from "../../core/custom-hooks/useResponsiveValues";
+import Services from "../../components/organisms/services-section";
+import MainLogo from "../../components/molecules/main-logo";
+import ContactSection from "../../components/organisms/contact-section";
+import FooterV2 from "../../components/molecules/footerV2";
 
-interface ParallaxImageProps {
+export interface AnimationObject {
   src: string;
-  overlayColor: string;
-}
+  margin: {
+    desktop: string;
+    tablet: string;
+    mobile: string;
+  };
+  backgroundColor: string;
+  width: {
+    desktop: string;
+    tablet: string;
+    mobile: string;
+  };
 
-const ParallaxImage: React.FC<ParallaxImageProps> = ({ src, overlayColor }) => {
-  const { scrollY } = useScroll();
+  scrollY: MotionValue<number>;
+}
+const ParallaxImage: React.FC<AnimationObject> = ({
+  src,
+  backgroundColor,
+  margin,
+  width,
+  scrollY,
+}) => {
   const ref = useRef<HTMLDivElement>(null);
   const [elementTop, setElementTop] = useState(0);
   const [elementHeight, setElementHeight] = useState(0);
+  const { responsiveWidth, responsiveMargin } = useResponsiveValues(
+    width,
+    margin
+  );
 
-  useEffect(() => {
-    scrollY.onChange((value) => {
-      console.group("SCROLL");
-      console.log("elementTop", elementTop);
-      console.log("scrollY", value);
-      console.log(
-        "elementTop - window.innerHeight ",
-        elementTop - window.innerHeight
-      );
-      console.log(
-        "elementTop - window.innerHeight /2",
-        elementTop - window.innerHeight / 2
-      );
-      console.log(
-        "elementTop + elementHeight / 2",
-        elementTop + elementHeight / 2
-      );
-      console.log("elementTop + elementHeight ", elementTop + elementHeight);
-      console.groupEnd();
-    });
-  }, [elementTop, scrollY, elementHeight]);
-
-  useEffect(() => {
+  const updateElementPositions = () => {
     const element = ref.current;
     if (element) {
       const rect = element.getBoundingClientRect();
       setElementTop(rect.top + window.scrollY);
       setElementHeight(rect.height);
     }
-  }, [ref]);
+  };
+
+  useEffect(() => {
+    updateElementPositions();
+    window.addEventListener("resize", updateElementPositions);
+    window.addEventListener("scroll", updateElementPositions);
+
+    return () => {
+      window.removeEventListener("resize", updateElementPositions);
+      window.removeEventListener("scroll", updateElementPositions);
+    };
+  }, [ref, scrollY]);
 
   const opacity = useTransform(
     scrollY,
     [
-      elementTop - window.innerHeight + elementHeight,
-      elementTop - window.innerHeight / 2,
-      elementTop,
-      elementTop + elementHeight / 1.5,
+      elementTop - window.innerHeight,
+      elementTop - window.innerHeight * 0.7,
+      elementTop + elementHeight / 3,
+      elementTop + elementHeight,
     ],
     [1, 0, 0, 1]
   );
 
+  const scrollPercentage = useTransform(
+    scrollY,
+    [elementTop - window.innerHeight, elementTop - window.innerHeight / 1.5],
+    [0.25, 1]
+  );
+
   return (
     <motion.div ref={ref} className="parallax-image-container">
-      <div className="container">
-        <img
-          src={src}
-          alt=""
-          width={150}
-          height={150}
-          className="parallax-image"
-        />
+      <motion.div
+        style={{
+          scale: scrollPercentage,
+          margin: responsiveMargin,
+          width: responsiveWidth,
+        }}
+        className="container"
+      >
+        <img src={src} alt="" className="parallax-image" />
         <motion.div
           className="overlay"
           style={{
-            backgroundColor: overlayColor,
-            opacity: opacity,
+            backgroundColor,
+            opacity,
           }}
         ></motion.div>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };
 
-const NewLandingPage3: React.FC = () => {
+const NewLanding: React.FC = () => {
+  const { scrollY } = useScroll();
+  const targetRef = useRef<HTMLDivElement>(null);
+
   return (
-    <div>
-      <ParallaxImage
-        src="https://globalnews.ca/wp-content/uploads/2023/05/Screen-Shot-2023-04-21-at-9.22.06-AM.png?w=1200"
-        overlayColor="rgba(255, 0, 0)"
-      />
-
-      <div style={{ height: "100vh" }}></div>
-      <ParallaxImage
-        src="https://globalnews.ca/wp-content/uploads/2023/05/Screen-Shot-2023-04-21-at-9.22.06-AM.png?w=1200"
-        overlayColor="rgba(255, 0, 0)"
-      />
-      {/*           <ParallaxImage
-            src="https://globalnews.ca/wp-content/uploads/2023/05/Screen-Shot-2023-04-21-at-9.22.06-AM.png?w=1200"
-            overlayColor="rgba(0, 255, 0, 0.5)"
-          />
+    <div className="new-landing">
+      <div className="" style={{ marginBottom: "40vh" }}>
+        {data.imgs.map(({ backgroundColor, src, margin, width }, index) => (
           <ParallaxImage
-            src="https://globalnews.ca/wp-content/uploads/2023/05/Screen-Shot-2023-04-21-at-9.22.06-AM.png?w=1200"
-            overlayColor="rgba(0, 0, 255, 0.5)"
+            key={index}
+            margin={margin}
+            width={width}
+            backgroundColor={backgroundColor}
+            src={src}
+            scrollY={scrollY}
           />
-          <ParallaxImage
-            src="https://globalnews.ca/wp-content/uploads/2023/05/Screen-Shot-2023-04-21-at-9.22.06-AM.png?w=1200"
-            overlayColor="rgba(255, 0, 0, 0.5)"
-          /> */}
-
-      <div style={{ height: "100vh" }}></div>
+        ))}
+      </div>
+      <div className="" ref={targetRef}>
+        <Services />
+      </div>
+      <MainLogo scrollY={scrollY} targetRef={targetRef} />
+      <ContactSection />
+      <FooterV2 />
     </div>
   );
 };
 
-export default NewLandingPage3;
+export default NewLanding;

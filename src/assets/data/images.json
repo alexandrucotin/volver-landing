@@ -3,30 +3,30 @@
         {
             "src": "https://thecanvasartfactory.com.au/cdn/shop/collections/modern-artworkthe-canvas-art-factory.jpg?v=1695954418",
             "margin": {
-                "desktop": "0 0 0  10%",
-                "tablet": "0 0 0 5%",
-                "mobile": "0 0 15% auto"
+                "desktop": "0 0 0  10vw",
+                "tablet": "0 0 0 5vw",
+                "mobile": "0 0 15vw auto"
             },
             "backgroundColor": "red",
             "width": {
-                "desktop": "40%",
-                "tablet": "50%",
-                "mobile": "55%"
+                "desktop": "40vw",
+                "tablet": "50vw",
+                "mobile": "55vw"
             },
             "zIndex": 1
         },
         {
             "src": "https://storage.googleapis.com/pod_public/1300/178809.jpg",
             "margin": {
-                "desktop": "-5% 0 0 60%",
-                "tablet": "-10% 0 0 auto",
-                "mobile": "0 0 10% 0"
+                "desktop": "-5vw 0 0 60vw",
+                "tablet": "-10vw 0 0 auto",
+                "mobile": "0 0 10vw 0"
             },
             "backgroundColor": "blue",
             "width": {
-                "desktop": "25%",
-                "tablet": "40%",
-                "mobile": "55%"
+                "desktop": "25vw",
+                "tablet": "40vw",
+                "mobile": "55vw"
             },
             "zIndex": 0
         },
@@ -34,59 +34,59 @@
             "src": "https://5.imimg.com/data5/ANDROID/Default/2021/1/YY/QA/ME/117124341/product-jpeg-500x500.jpg",
             "margin": {
                 "desktop": "0 0 0 0",
-                "tablet": "15% 0 -10% auto",
-                "mobile": "0 0 10% 0"
+                "tablet": "15vw 0 -10vw auto",
+                "mobile": "0 0 10vw 0"
             },
             "backgroundColor": "green",
             "width": {
-                "desktop": "30%",
-                "tablet": "45%",
-                "mobile": "55%"
+                "desktop": "30vw",
+                "tablet": "45vw",
+                "mobile": "55vw"
             },
             "zIndex": 0
         },
         {
             "src": "https://globalnews.ca/wp-content/uploads/2023/05/Screen-Shot-2023-04-21-at-9.22.06-AM.png?w=1200",
             "margin": {
-                "desktop": "-10% 0 0 50%",
-                "tablet": "20% 0 0 15%",
-                "mobile": "0 0 10% auto"
+                "desktop": "-10vw 0 0 50vw",
+                "tablet": "20vw 0 0 15vw",
+                "mobile": "0 0 10vw auto"
             },
             "backgroundColor": "yellow",
             "width": {
-                "desktop": "35%",
-                "tablet": "40%",
-                "mobile": "55%"
+                "desktop": "35vw",
+                "tablet": "40vw",
+                "mobile": "55vw"
             },
             "zIndex": 1
         },
         {
             "src": "https://thecanvasartfactory.com.au/cdn/shop/collections/modern-artworkthe-canvas-art-factory.jpg?v=1695954418",
             "margin": {
-                "desktop": "0 0 0  10%",
-                "tablet": "0 0 0 5%",
-                "mobile": "0 0 15% auto"
+                "desktop": "0 0 0  10vw",
+                "tablet": "0 0 0 5vw",
+                "mobile": "0 0 15vw auto"
             },
             "backgroundColor": "red",
             "width": {
-                "desktop": "40%",
-                "tablet": "50%",
-                "mobile": "55%"
+                "desktop": "40vw",
+                "tablet": "50vw",
+                "mobile": "55vw"
             },
             "zIndex": 1
         },
         {
             "src": "https://storage.googleapis.com/pod_public/1300/178809.jpg",
             "margin": {
-                "desktop": "-5% 0 0 60%",
-                "tablet": "-10% 0 0 auto",
-                "mobile": "0 0 10% 0"
+                "desktop": "-5vw 0 0 60vw",
+                "tablet": "-10vw 0 0 auto",
+                "mobile": "0 0 10vw 0"
             },
             "backgroundColor": "blue",
             "width": {
-                "desktop": "25%",
-                "tablet": "40%",
-                "mobile": "55%"
+                "desktop": "25vw",
+                "tablet": "40vw",
+                "mobile": "55vw"
             },
             "zIndex": 0
         },
@@ -94,59 +94,59 @@
             "src": "https://5.imimg.com/data5/ANDROID/Default/2021/1/YY/QA/ME/117124341/product-jpeg-500x500.jpg",
             "margin": {
                 "desktop": "0 0 0 0",
-                "tablet": "15% 0 -10% auto",
-                "mobile": "0 0 10% 0"
+                "tablet": "15vw 0 -10vw auto",
+                "mobile": "0 0 10vw 0"
             },
             "backgroundColor": "green",
             "width": {
-                "desktop": "30%",
-                "tablet": "45%",
-                "mobile": "55%"
+                "desktop": "30vw",
+                "tablet": "45vw",
+                "mobile": "55vw"
             },
             "zIndex": 0
         },
         {
             "src": "https://globalnews.ca/wp-content/uploads/2023/05/Screen-Shot-2023-04-21-at-9.22.06-AM.png?w=1200",
             "margin": {
-                "desktop": "-10% 0 0 50%",
-                "tablet": "20% 0 0 15%",
-                "mobile": "0 0 10% auto"
+                "desktop": "-10vw 0 0 50vw",
+                "tablet": "20vw 0 0 15vw",
+                "mobile": "0 0 10vw auto"
             },
             "backgroundColor": "yellow",
             "width": {
-                "desktop": "35%",
-                "tablet": "40%",
-                "mobile": "55%"
+                "desktop": "35vw",
+                "tablet": "40vw",
+                "mobile": "55vw"
             },
             "zIndex": 1
         },
         {
             "src": "https://thecanvasartfactory.com.au/cdn/shop/collections/modern-artworkthe-canvas-art-factory.jpg?v=1695954418",
             "margin": {
-                "desktop": "0 0 0  10%",
-                "tablet": "0 0 0 5%",
-                "mobile": "0 0 15% auto"
+                "desktop": "0 0 0  10vw",
+                "tablet": "0 0 0 5vw",
+                "mobile": "0 0 15vw auto"
             },
             "backgroundColor": "red",
             "width": {
-                "desktop": "40%",
-                "tablet": "50%",
-                "mobile": "55%"
+                "desktop": "40vw",
+                "tablet": "50vw",
+                "mobile": "55vw"
             },
             "zIndex": 1
         },
         {
             "src": "https://storage.googleapis.com/pod_public/1300/178809.jpg",
             "margin": {
-                "desktop": "-5% 0 0 60%",
-                "tablet": "-10% 0 0 auto",
-                "mobile": "0 0 10% 0"
+                "desktop": "-5vw 0 0 60vw",
+                "tablet": "-10vw 0 0 auto",
+                "mobile": "0 0 10vw 0"
             },
             "backgroundColor": "blue",
             "width": {
-                "desktop": "25%",
-                "tablet": "40%",
-                "mobile": "55%"
+                "desktop": "25vw",
+                "tablet": "40vw",
+                "mobile": "55vw"
             },
             "zIndex": 0
         },
@@ -154,29 +154,29 @@
             "src": "https://5.imimg.com/data5/ANDROID/Default/2021/1/YY/QA/ME/117124341/product-jpeg-500x500.jpg",
             "margin": {
                 "desktop": "0 0 0 0",
-                "tablet": "15% 0 -10% auto",
-                "mobile": "0 0 10% 0"
+                "tablet": "15vw 0 -10vw auto",
+                "mobile": "0 0 10vw 0"
             },
             "backgroundColor": "green",
             "width": {
-                "desktop": "30%",
-                "tablet": "45%",
-                "mobile": "55%"
+                "desktop": "30vw",
+                "tablet": "45vw",
+                "mobile": "55vw"
             },
             "zIndex": 0
         },
         {
             "src": "https://globalnews.ca/wp-content/uploads/2023/05/Screen-Shot-2023-04-21-at-9.22.06-AM.png?w=1200",
             "margin": {
-                "desktop": "-10% 0 0 50%",
-                "tablet": "20% 0 0 15%",
-                "mobile": "0 0 10% auto"
+                "desktop": "-10vw 0 0 50vw",
+                "tablet": "20vw 0 0 15vw",
+                "mobile": "0 0 10vw auto"
             },
             "backgroundColor": "yellow",
             "width": {
-                "desktop": "35%",
-                "tablet": "40%",
-                "mobile": "55%"
+                "desktop": "35vw",
+                "tablet": "40vw",
+                "mobile": "55vw"
             },
             "zIndex": 1
         }

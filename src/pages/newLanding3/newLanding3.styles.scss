@@ -1,8 +1,11 @@
 .parallax-image-container {
+  display: flex;
   .container {
     position: relative;
 
     .parallax-image {
+      object-fit: contain;
+      width: 100%;
     }
 
     .overlay {

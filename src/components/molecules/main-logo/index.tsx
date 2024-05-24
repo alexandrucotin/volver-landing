@@ -1,14 +1,15 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { MotionValue, motion, useTransform } from "framer-motion";
 import volverLogo from "../../../assets/logo.png";
 
 interface MainLogoProps {
   targetRef: React.RefObject<HTMLDivElement>;
+  scrollY: MotionValue<number>;
 }
-const MainLogo: React.FC<MainLogoProps> = ({ targetRef }) => {
+
+const MainLogo: React.FC<MainLogoProps> = ({ targetRef, scrollY }) => {
   const stickyRef = useRef<HTMLDivElement>(null);
   const [elementTop, setElementTop] = useState(0);
-  const { scrollY } = useScroll();
 
   const updateElementPositions = useCallback(() => {
     const element = targetRef.current;
@@ -18,9 +19,29 @@ const MainLogo: React.FC<MainLogoProps> = ({ targetRef }) => {
     }
   }, [targetRef]);
 
+  useEffect(() => {
+    updateElementPositions();
+    window.addEventListener("resize", updateElementPositions);
+    return () => {
+      window.removeEventListener("resize", updateElementPositions);
+    };
+  }, [updateElementPositions]);
+
+  useEffect(() => {
+    const element = stickyRef.current;
+    if (element) {
+      const img = element.querySelector("img");
+      if (img) {
+        img.onload = () => {
+          updateElementPositions();
+        };
+      }
+    }
+  }, [updateElementPositions]);
+
   const yTransition = useTransform(
     scrollY,
-    [elementTop - window.innerHeight, elementTop - window.innerHeight / 12],
+    [elementTop - window.innerHeight, elementTop - window.innerHeight / 11.5],
     [window.innerHeight - 100, 0]
   );
 
@@ -39,12 +60,6 @@ const MainLogo: React.FC<MainLogoProps> = ({ targetRef }) => {
     ["rgba(255,255,255,0)", "rgba(255,255,255,1)"]
   );
 
-  useEffect(() => {
-    window.addEventListener("resize", updateElementPositions);
-    return () => {
-      window.removeEventListener("resize", updateElementPositions);
-    };
-  }, [updateElementPositions]);
   return (
     <motion.div
       ref={stickyRef}

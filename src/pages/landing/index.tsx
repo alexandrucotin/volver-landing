@@ -11,7 +11,7 @@ const LandingPage: React.FC = () => {
       <div className="landing-page-images-container">
         <ImagesContainer images={data.imgs} />
       </div>
-      <MainLogo targetRef={targetRef} />
+      {/* <MainLogo targetRef={targetRef} /> */}
       <div className="" ref={targetRef}>
         <Services />
       </div>
