@@ -74,7 +74,9 @@ const MainLogo: React.FC<MainLogoProps> = ({ targetRef, scrollY }) => {
           width: yScale,
         }}
       >
-        <img src={volverLogo} alt="Volver studio logo" />
+        <div>
+          <img src={volverLogo} alt="Volver studio logo" />
+        </div>
       </motion.div>
     </motion.div>
   );

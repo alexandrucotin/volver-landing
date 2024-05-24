@@ -2,10 +2,10 @@ import React, { useRef, useEffect, useState } from "react";
 import { motion, useTransform, useScroll, MotionValue } from "framer-motion";
 import data from "../../assets/data/images.json";
 import { useResponsiveValues } from "../../core/custom-hooks/useResponsiveValues";
-import Services from "../../components/organisms/services-section";
 import MainLogo from "../../components/molecules/main-logo";
 import ContactSection from "../../components/organisms/contact-section";
 import FooterV2 from "../../components/molecules/footerV2";
+import Services2 from "../../components/organisms/services-section-2";
 
 export interface AnimationObject {
   src: string;
@@ -79,10 +79,12 @@ const ParallaxImage: React.FC<AnimationObject> = ({
     <motion.div ref={ref} className="parallax-image-container">
       <motion.div
         style={{
+          originX: 0,
           scale: scrollPercentage,
           margin: responsiveMargin,
           width: responsiveWidth,
         }}
+        transition={{ type: "spring", stiffness: 300 }}
         className="container"
       >
         <img src={src} alt="" className="parallax-image" />
@@ -104,7 +106,7 @@ const NewLanding: React.FC = () => {
 
   return (
     <div className="new-landing">
-      <div className="" style={{ marginBottom: "40vh" }}>
+      <div className="" style={{ marginBottom: "5vh" }}>
         {data.imgs.map(({ backgroundColor, src, margin, width }, index) => (
           <ParallaxImage
             key={index}
@@ -117,7 +119,7 @@ const NewLanding: React.FC = () => {
         ))}
       </div>
       <div className="" ref={targetRef}>
-        <Services />
+        <Services2 />
       </div>
       <MainLogo scrollY={scrollY} targetRef={targetRef} />
       <ContactSection />
