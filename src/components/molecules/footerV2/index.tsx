@@ -1,8 +1,22 @@
+import { Button } from "antd";
 import React from "react";
 
 const FooterV2: React.FC = () => {
+  const handleContactClick = () => {
+    window.location.href =
+      "mailto:info@example.com?subject=Contact%20Us&body=Hello";
+  };
   return (
     <footer className="footerv2">
+      <h2 className="contact-title">Get in Touch</h2>
+      <Button
+        type="primary"
+        size="large"
+        onClick={handleContactClick}
+        className="contact-button"
+      >
+        Contact Us
+      </Button>
       <div className="footerv2-socials-container">
         <a href="https://www.facebook.com/profile.php?id=100094448767897">
           <svg

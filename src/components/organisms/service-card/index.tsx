@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 interface ServiceCardProps {
   index: number;
@@ -12,27 +11,18 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   description,
   index,
 }) => {
-  const arrow = {
-    initial: { rotateY: 0, scale: 1 },
-    animate: { rotateY: 180, scale: 1 },
-  };
   return (
-    <motion.div
-      className="service-card"
-      initial="initial"
-      animate="initial"
-      whileHover="animate"
-    >
-      <motion.div variants={arrow} className="service-card-inner">
-        <div className="service-card-front">
+    <div className="flip-card">
+      <div className="flip-card-inner">
+        <div className="flip-card-front">
           <div className="service-card-front-index">{index}</div>
           <h3>{title}</h3>
         </div>
-        <div className="service-card-back">
+        <div className="flip-card-back">
           <p>{description}</p>
         </div>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 };
 

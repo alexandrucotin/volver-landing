@@ -1,14 +1,10 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
-import { MotionValue, motion, useTransform } from "framer-motion";
-import volverLogo from "../../../assets/logo.png";
+import React from "react";
+import logo from "../../../assets/logo.png";
 
-interface MainLogoProps {
-  targetRef: React.RefObject<HTMLDivElement>;
-  scrollY: MotionValue<number>;
-}
+interface MainLogoProps {}
 
-const MainLogo: React.FC<MainLogoProps> = ({ targetRef, scrollY }) => {
-  const stickyRef = useRef<HTMLDivElement>(null);
+const MainLogo: React.FC<MainLogoProps> = () => {
+  /*   const stickyRef = useRef<HTMLDivElement>(null);
   const [elementTop, setElementTop] = useState(0);
 
   const updateElementPositions = useCallback(() => {
@@ -42,43 +38,28 @@ const MainLogo: React.FC<MainLogoProps> = ({ targetRef, scrollY }) => {
   const yTransition = useTransform(
     scrollY,
     [elementTop - window.innerHeight, elementTop - window.innerHeight / 11.5],
-    [window.innerHeight - 100, 0]
+    [window.innerHeight - window.innerHeight * 0.2, 0]
   );
 
   const yScale = useTransform(
     scrollY,
     [elementTop - window.innerHeight, elementTop - window.innerHeight / 4],
-    [200, 100]
-  );
+    ["20vh", "10vh"]
+  ); 
 
   const backgroundColor = useTransform(
     scrollY,
     [
-      elementTop - window.innerHeight + 200,
+      elementTop - window.innerHeight + window.innerHeight * 0.2,
       elementTop - window.innerHeight / 4,
     ],
     ["rgba(255,255,255,0)", "rgba(255,255,255,1)"]
   );
-
+*/
   return (
-    <motion.div
-      ref={stickyRef}
-      className="main-logo"
-      style={{
-        top: yTransition,
-        background: backgroundColor,
-      }}
-    >
-      <motion.div
-        style={{
-          width: yScale,
-        }}
-      >
-        <div>
-          <img src={volverLogo} alt="Volver studio logo" />
-        </div>
-      </motion.div>
-    </motion.div>
+    <div className="main-logo">
+      <img src={logo} alt="" />
+    </div>
   );
 };
 

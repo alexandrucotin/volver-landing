@@ -1,0 +1,19 @@
+{
+    "portfolio": [
+        {
+            "id": "1",
+            "title": "Himkok RTD",
+            "description": "A new ready-to-drink cocktail series...",
+            "images": [
+                "/images/himkok1.jpg",
+                "/images/himkok2.jpg",
+                "/images/himkok3.jpg"
+            ],
+            "details": [
+                "Detail 1",
+                "Detail 2",
+                "Detail 3"
+            ]
+        }
+    ]
+}

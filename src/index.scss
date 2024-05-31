@@ -1,9 +1,8 @@
 @import "./breakpoints.scss";
+@import "./variables.scss";
 @import "./pages/pages.styles.scss";
 @import "./components/components.styles.scss";
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +10,7 @@
 }
 
 body {
+  font-family: "Helvetica", sans-serif;
   font-size: 16px;
 
   @include breakpoint(md) {

@@ -1,11 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useRef, useEffect, useState } from "react";
 import { motion, useTransform, useScroll, MotionValue } from "framer-motion";
 import data from "../../assets/data/images.json";
 import { useResponsiveValues } from "../../core/custom-hooks/useResponsiveValues";
 import MainLogo from "../../components/molecules/main-logo";
-import ContactSection from "../../components/organisms/contact-section";
-import FooterV2 from "../../components/molecules/footerV2";
-import Services2 from "../../components/organisms/services-section-2";
 
 export interface AnimationObject {
   src: string;
@@ -20,7 +18,7 @@ export interface AnimationObject {
     tablet: string;
     mobile: string;
   };
-
+  zIndex: number;
   scrollY: MotionValue<number>;
 }
 const ParallaxImage: React.FC<AnimationObject> = ({
@@ -29,6 +27,7 @@ const ParallaxImage: React.FC<AnimationObject> = ({
   margin,
   width,
   scrollY,
+  zIndex,
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const [elementTop, setElementTop] = useState(0);
@@ -83,6 +82,7 @@ const ParallaxImage: React.FC<AnimationObject> = ({
           scale: scrollPercentage,
           margin: responsiveMargin,
           width: responsiveWidth,
+          zIndex: zIndex,
         }}
         transition={{ type: "spring", stiffness: 300 }}
         className="container"
@@ -102,29 +102,51 @@ const ParallaxImage: React.FC<AnimationObject> = ({
 
 const NewLanding: React.FC = () => {
   const { scrollY } = useScroll();
-  const targetRef = useRef<HTMLDivElement>(null);
+  const [displayedItems, setDisplayedItems] = useState(data.imgs);
+  const loader = useRef(null);
+
+  const handleObserver = (entities: any) => {
+    const target = entities[0];
+    if (target.isIntersecting) {
+      const newItems = displayedItems.concat(data.imgs);
+      setDisplayedItems(newItems);
+    }
+  };
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "20px",
+      threshold: 1.0,
+    };
+
+    const observer = new IntersectionObserver(handleObserver, options);
+    if (loader.current) {
+      observer.observe(loader.current);
+    }
+  }, [displayedItems]);
 
   return (
-    <div className="new-landing">
-      <div className="" style={{ marginBottom: "5vh" }}>
-        {data.imgs.map(({ backgroundColor, src, margin, width }, index) => (
-          <ParallaxImage
-            key={index}
-            margin={margin}
-            width={width}
-            backgroundColor={backgroundColor}
-            src={src}
-            scrollY={scrollY}
-          />
-        ))}
+    <>
+      <div className="new-landing">
+        <div className="">
+          {displayedItems.map(
+            ({ backgroundColor, src, margin, width, zIndex }, index) => (
+              <ParallaxImage
+                key={index}
+                margin={margin}
+                width={width}
+                backgroundColor={backgroundColor}
+                src={src}
+                scrollY={scrollY}
+                zIndex={zIndex}
+              />
+            )
+          )}
+        </div>
+        <div ref={loader} className="loading"></div>
+        <MainLogo />
       </div>
-      <div className="" ref={targetRef}>
-        <Services2 />
-      </div>
-      <MainLogo scrollY={scrollY} targetRef={targetRef} />
-      <ContactSection />
-      <FooterV2 />
-    </div>
+    </>
   );
 };
 

@@ -1,56 +1,16 @@
 .services {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
   background-image: url("https://globalnews.ca/wp-content/uploads/2023/05/Screen-Shot-2023-04-21-at-9.22.06-AM.png?w=1200");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
 
-.services-section {
-  &-image {
-    background: url("https://globalnews.ca/wp-content/uploads/2023/05/Screen-Shot-2023-04-21-at-9.22.06-AM.png?w=1200");
-    height: 500px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  @include breakpoint(md) {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  &-content {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1rem;
-
-    &-description {
-      flex-basis: 40%;
-      gap: 1.5rem;
-    }
-
-    &-services-list {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      flex-basis: 50%;
-      gap: 2rem;
-
-      &-item {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-
-        &-key {
-          font-size: 1rem;
-          line-height: 0.8;
-          font-weight: bold;
-        }
-
-        &-title {
-          font-size: 1rem;
-        }
-      }
-    }
+  @include breakpoint(lg) {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

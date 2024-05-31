@@ -28,11 +28,8 @@ const servicesData = [
 
 const Services2: React.FC = () => {
   return (
-    <div className="">
-      <div
-        className="services-section-content-description"
-        style={{ padding: "1.5rem" }}
-      >
+    <div className="" style={{ padding: "1.5rem" }}>
+      <div className="services-section-content-description">
         <Title className="services-section-content-description-title">
           A studio <span>not an agency</span>
         </Title>
