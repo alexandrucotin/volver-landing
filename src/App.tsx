@@ -8,7 +8,6 @@ import WorkInProgressPage from "./pages/work-in-progress";
 import LandingPage from "./pages/landing";
 import { ConfigProvider } from "antd";
 import JobDetail from "./pages/job-details";
-import Menu from "./components/organisms/navbar";
 import AboutPage from "./pages/about";
 import ContactPage from "./pages/contact/contact";
 
@@ -30,59 +29,53 @@ const App: React.FC = () => {
       }}
     >
       <Router>
-        <div
-          className=""
-          style={{ maxWidth: 1440, margin: "0 auto", position: "relative" }}
-        >
-          <Menu />
-          <Routes>
-            <Route
-              path="/login"
-              element={<Auth onAuthenticate={setAuthenticated} />}
-            />
-            <Route path="/" element={<WorkInProgressPage />} />
-            <Route
-              path="/landing"
-              element={
-                <ProtectedRoute>
-                  <LandingPage />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/new-landing3"
-              element={
-                <ProtectedRoute>
-                  <NewLandingPage3 />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/about"
-              element={
-                <ProtectedRoute>
-                  <AboutPage />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/contact"
-              element={
-                <ProtectedRoute>
-                  <ContactPage />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/portfolio/:id"
-              element={
-                <ProtectedRoute>
-                  <JobDetail />
-                </ProtectedRoute>
-              }
-            />
-          </Routes>
-        </div>
+        <Routes>
+          <Route
+            path="/login"
+            element={<Auth onAuthenticate={setAuthenticated} />}
+          />
+          <Route path="/" element={<WorkInProgressPage />} />
+          <Route
+            path="/landing"
+            element={
+              <ProtectedRoute>
+                <LandingPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/new-landing3"
+            element={
+              <ProtectedRoute>
+                <NewLandingPage3 />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <ProtectedRoute>
+                <AboutPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <ProtectedRoute>
+                <ContactPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/portfolio/:id"
+            element={
+              <ProtectedRoute>
+                <JobDetail />
+              </ProtectedRoute>
+            }
+          />
+        </Routes>
       </Router>
     </ConfigProvider>
   );
