@@ -1,9 +1,16 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useRef, useEffect, useState } from "react";
-import { motion, useTransform, useScroll, MotionValue } from "framer-motion";
+import {
+  motion,
+  useTransform,
+  useScroll,
+  MotionValue,
+  AnimatePresence,
+} from "framer-motion";
 import data from "../../../public/data/images.json";
 import { useResponsiveValues } from "../../core/custom-hooks/useResponsiveValues";
 import MainLogo from "../../components/molecules/main-logo";
+import { Link } from "react-router-dom";
 
 export interface AnimationObject {
   src: string;
@@ -20,6 +27,7 @@ export interface AnimationObject {
   };
   zIndex: number;
   scrollY: MotionValue<number>;
+  projectId: string;
 }
 const ParallaxImage: React.FC<AnimationObject> = ({
   src,
@@ -28,6 +36,7 @@ const ParallaxImage: React.FC<AnimationObject> = ({
   width,
   scrollY,
   zIndex,
+  projectId,
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const [elementTop, setElementTop] = useState(0);
@@ -36,6 +45,7 @@ const ParallaxImage: React.FC<AnimationObject> = ({
     width,
     margin
   );
+  const [isHovered, setIsHovered] = useState(false);
 
   const updateElementPositions = () => {
     const element = ref.current;
@@ -86,15 +96,48 @@ const ParallaxImage: React.FC<AnimationObject> = ({
         }}
         transition={{ type: "spring", stiffness: 300 }}
         className="container"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
-        <img src={src} alt="" className="parallax-image" />
-        <motion.div
-          className="overlay"
-          style={{
-            backgroundColor,
-            opacity,
-          }}
-        ></motion.div>
+        <Link to={`/portfolio/${projectId}`} key={projectId}>
+          <img src={src} alt="" className="parallax-image" />
+
+          <motion.div
+            className="overlay"
+            style={{
+              backgroundColor,
+              opacity,
+            }}
+          ></motion.div>
+          <AnimatePresence>
+            {isHovered && (
+              <motion.div
+                className="rounded-circle"
+                style={{
+                  backgroundColor,
+                }}
+                initial={{
+                  opacity: 0,
+                  scale: 0,
+                  translateX: "-50%",
+                  translateY: "-50%",
+                }}
+                animate={{
+                  opacity: 1,
+                  scale: 1,
+                  translateX: "-50%",
+                  translateY: "-50%",
+                }}
+                exit={{
+                  opacity: 0,
+                  scale: 0,
+                  translateX: "-50%",
+                  translateY: "-50%",
+                }}
+              ></motion.div>
+            )}
+          </AnimatePresence>
+        </Link>
       </motion.div>
     </motion.div>
   );
@@ -130,7 +173,10 @@ const NewLanding: React.FC = () => {
       <div className="new-landing">
         <div className="">
           {displayedItems.map(
-            ({ backgroundColor, src, margin, width, zIndex }, index) => (
+            (
+              { backgroundColor, src, margin, width, zIndex, projectId },
+              index
+            ) => (
               <ParallaxImage
                 key={index}
                 margin={margin}
@@ -139,6 +185,7 @@ const NewLanding: React.FC = () => {
                 src={src}
                 scrollY={scrollY}
                 zIndex={zIndex}
+                projectId={projectId}
               />
             )
           )}

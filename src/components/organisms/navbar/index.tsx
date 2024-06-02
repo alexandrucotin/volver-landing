@@ -86,7 +86,7 @@ const Menu: React.FC = () => {
           </motion.li>
           <motion.li
             whileHover={{ scale: 1.1 }}
-            className={currentPath === "about" ? "selected" : ""}
+            className={currentPath === "services" ? "selected" : ""}
           >
             <Link to="/services" onClick={toggleMenu}>
               Services

@@ -3,8 +3,8 @@
         {
             "src": "/projects/luca-carta/merch.jpg",
             "margin": {
-                "desktop": "0 0 0  10%",
-                "tablet": "0 0 0 5%",
+                "desktop": "5% 0 0  0",
+                "tablet": "5% 0 0 0",
                 "mobile": "15% 0 15% 10%"
             },
             "backgroundColor": "lightgray",
@@ -13,7 +13,8 @@
                 "tablet": "50%",
                 "mobile": "75%"
             },
-            "zIndex": 2
+            "zIndex": 2,
+            "projectId": "1"
         },
         {
             "src": "/projects/binuforti/IMG_4838-Edit.jpg",
@@ -28,7 +29,8 @@
                 "tablet": "40%",
                 "mobile": "55%"
             },
-            "zIndex": 0
+            "zIndex": 0,
+            "projectId": "2"
         },
         {
             "src": "/projects/s-anei/_MG_3244-Edit-2-Edit-Edit.jpg",
@@ -43,7 +45,8 @@
                 "tablet": "45%",
                 "mobile": "55%"
             },
-            "zIndex": 2
+            "zIndex": 2,
+            "projectId": "3"
         },
         {
             "src": "/projects/su-trobasciu/305867283_1202064917035710_1958534126085849715_n.jpg",
@@ -58,7 +61,8 @@
                 "tablet": "40%",
                 "mobile": "55%"
             },
-            "zIndex": 0
+            "zIndex": 0,
+            "projectId": "4"
         }
     ]
 }
