@@ -28,23 +28,29 @@ const Menu: React.FC = () => {
 
   return (
     <>
-      <button className="burger" onClick={toggleMenu}>
-        <motion.div
-          className="line"
-          animate={isOpen ? { rotate: 45, y: 0, x: 0 } : { rotate: 0, y: 0 }}
-          transition={{ duration: 0.3 }}
-        />
-        <motion.div
-          className="line"
-          animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
-          transition={{ duration: 0.3 }}
-        />
-        <motion.div
-          className="line"
-          animate={isOpen ? { rotate: -45, y: 0, x: 0 } : { rotate: 0, y: 0 }}
-          transition={{ duration: 0.3 }}
-        />
-      </button>
+      <div className="navbar">
+        <div
+          className=""
+          style={{ height: 35, width: 150, backgroundColor: "red" }}
+        ></div>
+        <button className="burger" onClick={toggleMenu}>
+          <motion.div
+            className="line"
+            animate={isOpen ? { rotate: 45, y: 0, x: 0 } : { rotate: 0, y: 0 }}
+            transition={{ duration: 0.3 }}
+          />
+          <motion.div
+            className="line"
+            animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
+            transition={{ duration: 0.3 }}
+          />
+          <motion.div
+            className="line"
+            animate={isOpen ? { rotate: -45, y: 0, x: 0 } : { rotate: 0, y: 0 }}
+            transition={{ duration: 0.3 }}
+          />
+        </button>
+      </div>
       <motion.nav
         initial={false}
         animate={isOpen ? "open" : "closed"}

@@ -58,7 +58,11 @@ const MainLogo: React.FC<MainLogoProps> = () => {
 */
   return (
     <div className="main-logo">
-      <img src={logo} alt="" />
+      <div className="main-logo-container">
+        <div className="main-logo-container-img">
+          <img src={logo} alt="" />
+        </div>
+      </div>
     </div>
   );
 };

@@ -22,7 +22,6 @@ const App: React.FC = () => {
         token: {
           // Seed Token
           colorPrimary: "#b0241c",
-          borderRadius: 16,
           // Alias Token
         },
         components: {},

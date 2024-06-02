@@ -1,31 +1,43 @@
 .about-page {
-  &-main-image {
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  grid-template-areas:
+    "video"
+    "content";
+
+  @include breakpoint(md) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "video content";
+  }
+
+  &-video {
+    grid-area: video;
     display: flex;
     align-items: flex-end;
     text-align: center;
-    height: 100vh;
-    width: 100vw;
-    background-image: url("https://globalnews.ca/wp-content/uploads/2023/05/Screen-Shot-2023-04-21-at-9.22.06-AM.png?w=1200");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 1.5rem;
+    height: calc(100vh - $mobile-navbar-size - 1.5rem);
+    width: 100%;
 
-    &-title {
-      object-fit: contain;
+    video {
+      object-fit: cover;
       width: 100%;
-      height: auto;
+      height: 100%;
     }
   }
 
+  &-content {
+    grid-area: content;
+  }
+
   &-description {
-    padding: 1.5rem;
-    font-size: 0.8rem;
     margin: 0 !important;
+    line-height: 1.5;
   }
 
   &-services {
-    padding: 1.5rem;
+    padding: 1.5rem 0;
     display: grid;
     gap: 1.5rem;
     grid-template-columns: 1fr 1fr;
@@ -36,12 +48,10 @@
       gap: 1rem;
 
       &-labels {
-        font-size: 0.8rem;
       }
 
       &-description {
-        font-size: 0.8rem;
-        color: $primary-color;
+        line-height: 1.5;
       }
     }
   }
