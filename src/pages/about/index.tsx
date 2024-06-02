@@ -6,7 +6,9 @@ const AboutPage: React.FC = () => {
   return (
     <div className="about-page">
       <div className="about-page-video">
-        <video src={video} loop autoPlay muted />
+        <video loop autoPlay muted controls={false}>
+          <source src={video} type="video/mp4" />
+        </video>
       </div>
       <div className="about-page-content">
         {data.description.map((description, index) => (
