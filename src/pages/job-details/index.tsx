@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import data from "../../assets/data/portfolio.json";
+import data from "../../../public/data/portfolio.json";
 import { useParams } from "react-router-dom";
 import PhotoAlbum from "react-photo-album";
 import photos from "./photos";

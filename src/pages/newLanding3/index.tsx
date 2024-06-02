@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useRef, useEffect, useState } from "react";
 import { motion, useTransform, useScroll, MotionValue } from "framer-motion";
-import data from "../../assets/data/images.json";
+import data from "../../../public/data/images.json";
 import { useResponsiveValues } from "../../core/custom-hooks/useResponsiveValues";
 import MainLogo from "../../components/molecules/main-logo";
 

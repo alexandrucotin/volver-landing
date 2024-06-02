@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import data from "../../assets/data/services.json";
+import data from "../../../public/data/services.json";
 
 const ServicesPage: React.FC = () => {
   return (

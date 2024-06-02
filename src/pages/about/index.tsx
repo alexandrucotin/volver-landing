@@ -1,6 +1,6 @@
 import React from "react";
-import data from "../../assets/data/about.json";
-import video from "../../assets/reel.mp4";
+import data from "../../../public/data/about.json";
+import video from "../../../public/reel.mp4";
 
 const AboutPage: React.FC = () => {
   return (
