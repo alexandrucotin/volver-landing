@@ -1,13 +1,13 @@
 {
     "imgs": [
         {
-            "src": "https://thecanvasartfactory.com.au/cdn/shop/collections/modern-artworkthe-canvas-art-factory.jpg?v=1695954418",
+            "src": "/src/assets/projects/luca-carta/merch.jpg",
             "margin": {
                 "desktop": "0 0 0  10%",
                 "tablet": "0 0 0 5%",
                 "mobile": "15% 0 15% 10%"
             },
-            "backgroundColor": "red",
+            "backgroundColor": "lightgray",
             "width": {
                 "desktop": "40%",
                 "tablet": "50%",
@@ -16,13 +16,13 @@
             "zIndex": 2
         },
         {
-            "src": "https://storage.googleapis.com/pod_public/1300/178809.jpg",
+            "src": "/src/assets/projects/binuforti/IMG_4838-Edit.jpg",
             "margin": {
                 "desktop": "-5% 0 0 60%",
                 "tablet": "-10% 0 0 auto",
                 "mobile": "0 0 10% auto"
             },
-            "backgroundColor": "blue",
+            "backgroundColor": "green",
             "width": {
                 "desktop": "25%",
                 "tablet": "40%",
@@ -31,13 +31,13 @@
             "zIndex": 0
         },
         {
-            "src": "https://5.imimg.com/data5/ANDROID/Default/2021/1/YY/QA/ME/117124341/product-jpeg-500x500.jpg",
+            "src": "/src/assets/projects/s-anei/_MG_3244-Edit-2-Edit-Edit.jpg",
             "margin": {
                 "desktop": "0 0 0 0",
                 "tablet": "15% 0 -10% auto",
                 "mobile": "0 0 10% 0"
             },
-            "backgroundColor": "green",
+            "backgroundColor": "blue",
             "width": {
                 "desktop": "30%",
                 "tablet": "45%",
@@ -46,13 +46,13 @@
             "zIndex": 2
         },
         {
-            "src": "https://globalnews.ca/wp-content/uploads/2023/05/Screen-Shot-2023-04-21-at-9.22.06-AM.png?w=1200",
+            "src": "/src/assets/projects/su-trobasciu/305867283_1202064917035710_1958534126085849715_n.jpg",
             "margin": {
                 "desktop": "-10% 0 0 50%",
                 "tablet": "20% 0 0 15%",
                 "mobile": "0 0 10% auto"
             },
-            "backgroundColor": "yellow",
+            "backgroundColor": "orange",
             "width": {
                 "desktop": "35%",
                 "tablet": "40%",

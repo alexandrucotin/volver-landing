@@ -1,49 +1,7 @@
 {
-    "description": "Volver è uno studio creativo, multidisciplinare formato da un team fresco e dinamico, qualità che gli  radici più profonde. Creiamo da zero o stravolgiamo tutto, sprigioniamo il potenziale di ogni idea. Non ci sono molte regole in Volver se non rompere gli schemi della progettazione e della comunicazione.",
-    "services": [
-        {
-            "keys": [
-                "1",
-                "2"
-            ],
-            "titles": [
-                "Brand strategy",
-                "Copywriting"
-            ],
-            "description": "We help you define your brand strategy and create compelling copy that speaks to your audience."
-        },
-        {
-            "keys": [
-                "3",
-                "4"
-            ],
-            "titles": [
-                "Brand identity",
-                "Graphic design"
-            ],
-            "description": "We create unique brand identities and stunning graphic designs that stand out."
-        },
-        {
-            "keys": [
-                "5",
-                "6"
-            ],
-            "titles": [
-                "Website",
-                "Photography/Video service"
-            ],
-            "description": "We offer website design, professional photography, and video production services."
-        },
-        {
-            "keys": [
-                "7",
-                "8"
-            ],
-            "titles": [
-                "Interior",
-                " Landscaping"
-            ],
-            "description": "We provide interior design and landscaping services to transform your spaces."
-        }
+    "description": [
+        "Volver è uno studio creativo, multidisciplinare formato da un team fresco e dinamico, qualità che gli consente di cogliere le tendenze, reinterpretarle e darne una lettura sempre attuale ed efficace.",
+        "Volver (“tornare”) è uno spazio astratto, un viaggio con ritorno, un rientro verso le radici più profonde.",
+        "Creiamo da zero o stravolgiamo tutto, sprigioniamo il potenziale di ogni idea. Non ci sono molte regole in Volver se non rompere gli schemi della progettazione e della comunicazione."
     ]
 }

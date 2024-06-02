@@ -10,6 +10,7 @@ import { ConfigProvider } from "antd";
 import JobDetail from "./pages/job-details";
 import AboutPage from "./pages/about";
 import ContactPage from "./pages/contact/contact";
+import ServicesPage from "./pages/services";
 
 const App: React.FC = () => {
   const [, setAuthenticated] = useState<boolean>(
@@ -55,6 +56,14 @@ const App: React.FC = () => {
             element={
               <ProtectedRoute>
                 <AboutPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/services"
+            element={
+              <ProtectedRoute>
+                <ServicesPage />
               </ProtectedRoute>
             }
           />

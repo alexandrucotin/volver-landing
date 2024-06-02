@@ -9,8 +9,21 @@ const AboutPage: React.FC = () => {
         <video src={video} loop autoPlay muted />
       </div>
       <div className="about-page-content">
-        <div className="about-page-description">{data.description}</div>
-        <div className="about-page-services">
+        {data.description.map((description, index) => (
+          <div key={index} className="about-page-content-description">
+            {description}
+          </div>
+        ))}
+
+        {/* <div className="about-page-content-description">
+          {data.description.map((description, index) => (
+            <>
+              <div>{description}</div>
+              <br />
+            </>
+          ))}
+        </div> */}
+        {/*         <div className="about-page-services">
           {data.services.map((service, index) => (
             <div key={index} className="about-page-services-item">
               <div className="about-page-services-item-labels">
@@ -25,7 +38,7 @@ const AboutPage: React.FC = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

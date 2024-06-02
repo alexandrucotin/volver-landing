@@ -29,10 +29,11 @@ const Menu: React.FC = () => {
   return (
     <>
       <div className="navbar">
-        <div
-          className=""
-          style={{ height: 35, width: 150, backgroundColor: "red" }}
-        ></div>
+        <div className="navbar-logo-container">
+          <Link to="/new-landing3">
+            <img src={logo} alt="" />
+          </Link>
+        </div>
         <button className="burger" onClick={toggleMenu}>
           <motion.div
             className="line"
@@ -81,6 +82,14 @@ const Menu: React.FC = () => {
           >
             <Link to="/about" onClick={toggleMenu}>
               About
+            </Link>
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.1 }}
+            className={currentPath === "about" ? "selected" : ""}
+          >
+            <Link to="/services" onClick={toggleMenu}>
+              Services
             </Link>
           </motion.li>
           <motion.li
