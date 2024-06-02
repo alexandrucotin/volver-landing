@@ -6,7 +6,7 @@ const AboutPage: React.FC = () => {
   return (
     <div className="about-page">
       <div className="about-page-video">
-        <video loop autoPlay muted controls={false}>
+        <video playsInline loop autoPlay muted controls={false}>
           <source src={video} type="video/mp4" />
         </video>
       </div>
