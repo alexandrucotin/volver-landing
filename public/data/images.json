@@ -1,7 +1,7 @@
 {
     "imgs": [
         {
-            "src": "/assets/projects/luca-carta/merch.jpg",
+            "src": "/projects/luca-carta/merch.jpg",
             "margin": {
                 "desktop": "0 0 0  10%",
                 "tablet": "0 0 0 5%",
@@ -16,7 +16,7 @@
             "zIndex": 2
         },
         {
-            "src": "/assets/projects/binuforti/IMG_4838-Edit.jpg",
+            "src": "/projects/binuforti/IMG_4838-Edit.jpg",
             "margin": {
                 "desktop": "-5% 0 0 60%",
                 "tablet": "-10% 0 0 auto",
@@ -31,7 +31,7 @@
             "zIndex": 0
         },
         {
-            "src": "/assets/projects/s-anei/_MG_3244-Edit-2-Edit-Edit.jpg",
+            "src": "/projects/s-anei/_MG_3244-Edit-2-Edit-Edit.jpg",
             "margin": {
                 "desktop": "0 0 0 0",
                 "tablet": "15% 0 -10% auto",
@@ -46,7 +46,7 @@
             "zIndex": 2
         },
         {
-            "src": "/assets/projects/su-trobasciu/305867283_1202064917035710_1958534126085849715_n.jpg",
+            "src": "/projects/su-trobasciu/305867283_1202064917035710_1958534126085849715_n.jpg",
             "margin": {
                 "desktop": "-10% 0 0 50%",
                 "tablet": "20% 0 0 15%",
