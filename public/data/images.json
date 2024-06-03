@@ -3,9 +3,9 @@
         {
             "src": "/projects/luca-carta/merch.jpg",
             "margin": {
-                "desktop": "5% 0 0  0",
-                "tablet": "5% 0 0 0",
-                "mobile": "15% 0 15% 10%"
+                "desktop": "0 0 0  0",
+                "tablet": "0 0 0 0",
+                "mobile": "0 0 15% 10%"
             },
             "backgroundColor": "lightgray",
             "width": {
@@ -35,8 +35,8 @@
         {
             "src": "/projects/s-anei/_MG_3244-Edit-2-Edit-Edit.jpg",
             "margin": {
-                "desktop": "0 0 0 0",
-                "tablet": "15% 0 -10% auto",
+                "desktop": "0 0 0 10%",
+                "tablet": "15% 15% -10% 10%",
                 "mobile": "0 0 10% 0"
             },
             "backgroundColor": "blue",
@@ -51,8 +51,8 @@
         {
             "src": "/projects/su-trobasciu/305867283_1202064917035710_1958534126085849715_n.jpg",
             "margin": {
-                "desktop": "-10% 0 0 50%",
-                "tablet": "20% 0 0 15%",
+                "desktop": "-10% 0 0 auto",
+                "tablet": "20% 0 0 auto",
                 "mobile": "0 0 10% auto"
             },
             "backgroundColor": "orange",

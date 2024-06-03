@@ -1,20 +1,19 @@
-import React, { useRef } from "react";
-/* import data from "../../assets/data/images.json"; */
-import Services from "../../components/organisms/services-section";
-/* import ImagesContainer from "../../components/organisms/images-section"; */
+import React from "react";
+import AboutSection from "../../components/organisms/about-section";
+import ContactSection from "../../components/organisms/contact-section";
+import ImagesSection from "../../components/organisms/images-section";
+import RunningText from "../../components/atoms/running-text";
 
 const LandingPage: React.FC = () => {
-  const targetRef = useRef<HTMLDivElement>(null);
   return (
-    <div className="landing-page">
-      <div className="landing-page-images-container">
-        {/* <ImagesContainer images={data.imgs} /> */}
+    <>
+      <div className="landing-page">
+        <ImagesSection />
+        <AboutSection />
+        <RunningText />
+        <ContactSection />
       </div>
-      {/* <MainLogo targetRef={targetRef} /> */}
-      <div className="" ref={targetRef}>
-        <Services />
-      </div>
-    </div>
+    </>
   );
 };
 

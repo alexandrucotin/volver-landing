@@ -1,38 +1,34 @@
 {
     "services": [
         {
+            "key": "01",
             "title": "BRAND IDENTITY - GRAPHIC & WEB DESIGN",
             "description": [
                 "Il marchio di un’azienda è più di un semplice nome, logo o prodotto. È una sensazione, una connessione, una storia che aspetta di essere raccontata. Noi ti aiutiamo a farlo."
-            ],
-            "width": "30%",
-            "margin": "0 0 0 0"
+            ]
         },
         {
+            "key": "02",
             "title": "PACKAGING & DESIGN",
             "description": [
                 "La progettazione visiva per un design grafico che si intreccia con una narrazione che parla di colori, volumi, materia e forme.",
                 "Spaziamo dal food packaging al design di interior alla progettazione nel fashion.",
                 "Ogni progetto con assoluto rigore, lasciando un’impressione duratura in coloro che osservano."
-            ],
-            "width": "40%",
-            "margin": "-12% 0 0px auto"
+            ]
         },
         {
+            "key": "03",
             "title": "CONTENT PRODUCTION & SOCIAL MEDIA",
             "description": [
                 "La visione artistica di un progetto è la forza trainante dietro ogni tratto, ogni fotogramma, ogni video prodotto. Dare forma ad una narrazione armoniosa, creativa e originale per affascinare menti e cuori. I social media possono essere lo strumento per veicolare il tuo messaggio con la giusta comunicazione visiva."
-            ],
-            "width": "40%",
-            "margin": "-5% auto 0px 10%"
+            ]
         },
         {
+            "key": "04",
             "title": "INTERIOR & LANDSCAPE DESIGN",
             "description": [
                 "Trasformare gli spazi in luoghi attraverso un processo che unisce estetica e funzionalità. Ogni angolo, ogni fessura, ogni sentiero progettato deve infondere armonia e carattere nel tessuto dell’ambiente circostante."
-            ],
-            "width": "35%",
-            "margin": "-10% 0px 0px auto"
+            ]
         }
     ]
 }

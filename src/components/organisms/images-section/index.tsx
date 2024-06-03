@@ -1,6 +1,7 @@
 import { useScroll } from "framer-motion";
+import MainLogo from "../../molecules/main-logo";
+import data from "../../../../public/data/images.json";
 import AnimatedImage from "../animated-image";
-
 export interface AnimationObject {
   src: string;
   margin: {
@@ -16,25 +17,26 @@ export interface AnimationObject {
   };
 }
 
-interface ScrollAnimationProps {
-  images: AnimationObject[];
-}
-
-const ImagesContainer: React.FC<ScrollAnimationProps> = ({ images }) => {
+const ImagesContainer: React.FC = () => {
   const { scrollY } = useScroll();
 
   return (
-    <div>
-      {images.map(({ backgroundColor, src, margin, width }, index) => (
-        <AnimatedImage
-          key={index}
-          backgroundColor={backgroundColor}
-          src={src}
-          margin={margin}
-          width={width}
-          scrollY={scrollY}
-        />
-      ))}
+    <div className="images-section">
+      {[...data.imgs, ...data.imgs].map(
+        ({ backgroundColor, src, margin, width, zIndex, projectId }, index) => (
+          <AnimatedImage
+            key={index}
+            margin={margin}
+            width={width}
+            backgroundColor={backgroundColor}
+            src={src}
+            scrollY={scrollY}
+            zIndex={zIndex}
+            projectId={projectId}
+          />
+        )
+      )}
+      <MainLogo />
     </div>
   );
 };

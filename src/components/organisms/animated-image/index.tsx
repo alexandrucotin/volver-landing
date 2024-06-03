@@ -1,92 +1,143 @@
-import { useEffect, useRef, useState } from "react";
-import { AnimationObject } from "../images-section";
-import { motion } from "framer-motion";
+import {
+  MotionValue,
+  useTransform,
+  motion,
+  AnimatePresence,
+} from "framer-motion";
+import { useRef, useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { useResponsiveValues } from "../../../core/custom-hooks/useResponsiveValues";
 
-interface ScrollAnimationElementProps extends AnimationObject {
-  scrollY: {
-    onChange: (handler: () => void) => void;
-    clearListeners: () => void;
+export interface AnimationObject {
+  src: string;
+  margin: {
+    desktop: string;
+    tablet: string;
+    mobile: string;
   };
+  backgroundColor: string;
+  width: {
+    desktop: string;
+    tablet: string;
+    mobile: string;
+  };
+  zIndex: number;
+  scrollY: MotionValue<number>;
+  projectId: string;
 }
-
-const AnimatedImage: React.FC<ScrollAnimationElementProps> = ({
-  backgroundColor,
-  scrollY,
-  width,
-  margin,
+const AnimatedImage: React.FC<AnimationObject> = ({
   src,
+  backgroundColor,
+  margin,
+  width,
+  scrollY,
+  zIndex,
+  projectId,
 }) => {
   const ref = useRef<HTMLDivElement>(null);
-  const [overlayOpacityPercentage, setOverlayOpacityPercentage] = useState(1);
-  const [scrollPercentage, setScrollPercentage] = useState(0);
+  const [elementTop, setElementTop] = useState(0);
+  const [elementHeight, setElementHeight] = useState(0);
   const { responsiveWidth, responsiveMargin } = useResponsiveValues(
     width,
     margin
   );
+  const [isHovered, setIsHovered] = useState(false);
+
+  const updateElementPositions = () => {
+    const element = ref.current;
+    if (element) {
+      const rect = element.getBoundingClientRect();
+      setElementTop(rect.top + window.scrollY);
+      setElementHeight(rect.height);
+    }
+  };
 
   useEffect(() => {
-    const updateScrollPercentage = () => {
-      const element = ref.current;
-      if (!element) return;
+    updateElementPositions();
+    window.addEventListener("resize", updateElementPositions);
+    window.addEventListener("scroll", updateElementPositions);
 
-      const rect = element.getBoundingClientRect(); // Ottiene le dimensioni e la posizione dell'elemento rispetto alla viewport
-      const windowHeight = window.innerHeight; // Ottiene l'altezza della finestra del browser
-      const { top, bottom } = rect; // Ottiene le proprietà 'top' e 'bottom' del rettangolo dell'elemento
-
-      let overlayOpacity = 1;
-      let percentage = 0;
-
-      // Controlla se la metà dell'altezza dell'elemento è visibile nella metà della finestra
-      if (top <= windowHeight / 2 && bottom >= windowHeight / 2) {
-        overlayOpacity = 0;
-        percentage = 1;
-      } else if (top > windowHeight / 2) {
-        // Controlla se la parte superiore dell'elemento è sopra la metà della finestra
-        overlayOpacity = (top - windowHeight / 2) / (windowHeight / 2); // Calcola l'opacità in base alla distanza dalla metà della finestra
-        percentage = 1 - (top - windowHeight / 2) / (windowHeight / 2); // Calcola la percentuale di scorrimento inversa rispetto alla distanza dalla metà della finestra
-      } else if (bottom < windowHeight / 2) {
-        // Controlla se la parte inferiore dell'elemento è sotto la metà della finestra
-        overlayOpacity = (windowHeight / 2 - bottom) / (windowHeight / 2); // Calcola l'opacità in base alla distanza dalla metà della finestra
-        percentage = 1; // Imposta la percentuale di scorrimento a 1
-      }
-
-      // Se l'elemento è completamente fuori dalla finestra, resetta la percentuale di scorrimento
-      if (bottom < 0 || top > windowHeight) {
-        percentage = 0; // Imposta la percentuale di scorrimento a 0
-      }
-
-      // Aggiorna lo stato dell'opacità del sovrapposizione e la percentuale di scorrimento
-      setOverlayOpacityPercentage(overlayOpacity);
-      setScrollPercentage(percentage);
+    return () => {
+      window.removeEventListener("resize", updateElementPositions);
+      window.removeEventListener("scroll", updateElementPositions);
     };
+  }, [ref, scrollY]);
 
-    // Aggiunge un listener per l'evento di cambio dello scrollY
-    scrollY.onChange(updateScrollPercentage);
+  const opacity = useTransform(
+    scrollY,
+    [
+      elementTop - window.innerHeight + window.innerHeight * 0.2,
+      elementTop - window.innerHeight * 0.7,
+      elementTop + elementHeight / 3,
+      elementTop + elementHeight - window.innerHeight * 0.2,
+    ],
+    [1, 0, 0, 1]
+  );
 
-    // Rimuove il listener quando il componente si smonta
-    return () => scrollY.clearListeners();
-  }, [scrollY]); // Il useEffect dipende da scrollY
+  const scrollPercentage = useTransform(
+    scrollY,
+    [
+      elementTop - window.innerHeight,
+      elementTop - window.innerHeight + window.innerHeight * 0.45,
+    ],
+    [0.25, 1]
+  );
 
   return (
-    <motion.div
-      ref={ref}
-      style={{ scale: scrollPercentage }}
-      className="animated-image"
-    >
-      <div
-        className="animated-image-container"
-        style={{ width: responsiveWidth, margin: responsiveMargin }}
+    <motion.div ref={ref} className="parallax-image-container">
+      <motion.div
+        style={{
+          originX: 0,
+          scale: scrollPercentage,
+          margin: responsiveMargin,
+          width: responsiveWidth,
+          zIndex: zIndex,
+        }}
+        transition={{ type: "spring", stiffness: 300 }}
+        className="container"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
-        <img src={src} alt="" />
-        <motion.div
-          className="animated-image-container-image-overlay"
-          style={{
-            backgroundColor: backgroundColor,
-            opacity: overlayOpacityPercentage,
-          }}
-        ></motion.div>
-      </div>
+        <Link to={`/portfolio/${projectId}`} key={projectId}>
+          <img src={src} alt="" className="parallax-image" />
+
+          <motion.div
+            className="overlay"
+            style={{
+              backgroundColor,
+              opacity,
+            }}
+          ></motion.div>
+          <AnimatePresence>
+            {isHovered && (
+              <motion.div
+                className="rounded-circle"
+                style={{
+                  backgroundColor,
+                }}
+                initial={{
+                  opacity: 0,
+                  scale: 0,
+                  translateX: "-50%",
+                  translateY: "-50%",
+                }}
+                animate={{
+                  opacity: 1,
+                  scale: 1,
+                  translateX: "-50%",
+                  translateY: "-50%",
+                }}
+                exit={{
+                  opacity: 0,
+                  scale: 0,
+                  translateX: "-50%",
+                  translateY: "-50%",
+                }}
+              ></motion.div>
+            )}
+          </AnimatePresence>
+        </Link>
+      </motion.div>
     </motion.div>
   );
 };

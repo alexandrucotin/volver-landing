@@ -26,7 +26,8 @@ body {
   @include breakpoint(xl) {
     font-size: 18px;
   } */
-  h1 {
+  h1,
+  h2 {
     font-family: "Cormorant Garamond", serif !important;
     font-weight: 600;
     font-style: italic;
