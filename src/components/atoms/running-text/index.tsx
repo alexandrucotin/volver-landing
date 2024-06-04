@@ -74,10 +74,10 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
 const RunningText: React.FC = () => {
   return (
     <div className="running-text">
-      <ParallaxText baseVelocity={-3}>
+      <ParallaxText baseVelocity={-1}>
         Everything starts with a "Ciao"
       </ParallaxText>
-      <ParallaxText baseVelocity={3}>
+      <ParallaxText baseVelocity={1}>
         Everything starts with a "Ciao"
       </ParallaxText>
     </div>
