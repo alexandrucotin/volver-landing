@@ -2,17 +2,22 @@
   display: flex;
   padding: 1.5rem;
   flex-direction: column;
-  gap: 10vh;
+  gap: 2.5vh;
   &-content {
     display: flex;
     flex-direction: column;
-    gap: 5vh;
+    gap: 2.5vh;
 
     &-row {
       display: grid;
 
       @include breakpoint(md) {
         grid-template-columns: 40% 60%;
+      }
+
+      &-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
       }
 
       &-description {
@@ -47,5 +52,16 @@
 
   .half-width {
     flex: 0.5;
+  }
+
+  /* Media query per schermi mobili */
+  @media (max-width: 768px) {
+    .image-row {
+      flex-direction: column;
+    }
+
+    .image-item {
+      flex: 1 0 100%;
+    }
   }
 }

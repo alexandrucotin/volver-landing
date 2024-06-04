@@ -43,7 +43,7 @@ const JobDetail: React.FC = () => {
           </div>
         </div>
         <div className="job-detail-content-row">
-          <h1 className="job-detail-content-row">Servizi</h1>
+          <h1 className="job-detail-content-row-title">Servizi</h1>
           <div className="job-detail-content-description">
             {jobDetails.services.map((service) => (
               <div>{service}</div>
@@ -52,7 +52,7 @@ const JobDetail: React.FC = () => {
         </div>
         {jobDetails.collaborations.length > 0 && (
           <div className="job-detail-content-row">
-            <h1 className="job-detail-content-row">Collaborazioni</h1>
+            <h1 className="job-detail-content-row-title">Collaborazioni</h1>
             <div className="job-detail-content-description">
               {jobDetails.collaborations.map((collab) => (
                 <div>
