@@ -2,17 +2,83 @@
     "portfolio": [
         {
             "id": "1",
-            "title": "Himkok RTD",
-            "description": "A new ready-to-drink cocktail series...",
-            "images": [
-                "/images/himkok1.jpg",
-                "/images/himkok2.jpg",
-                "/images/himkok3.jpg"
+            "title": "S’anei",
+            "description": [
+                "S’anei è una zona rurale nel cuore della Marmilla, in Sardegna da una tessera ecologica con il suolo prevalentemente sabbioso, da qui S’anei in italiano “sabbia”.",
+                "La produzione dell’olio prende il nome da questo frammento naturale dal caratteristico suolo in cui affondano le radici alberi di olivi cipressini centenari.",
+                "Attraversati da conigli, lepri, volpi e occasionalmente da qualche essere umano, a s’anei si fa tesoro del tempo e si celebra la terra come un territorio che è stato concesso dalla Natura e per questo appartenente a tutte le specie."
             ],
-            "details": [
-                "Detail 1",
-                "Detail 2",
-                "Detail 3"
+            "services": [
+                "BRANDING&PACKAGING",
+                "LABEL DESIGN",
+                "ART DIRECTION",
+                "CONTENT PRODUCTION"
+            ],
+            "collaborations": [
+                {
+                    "type": "Photography",
+                    "names": [
+                        "Elisa Usai"
+                    ]
+                }
+            ],
+            "images": [
+                [
+                    "/projects/s-anei/_MG_3221-Edit.jpg"
+                ],
+                [
+                    "/projects/s-anei/1.jpg"
+                ],
+                [
+                    "/projects/s-anei/ETICHETTA.jpg"
+                ],
+                [
+                    "/projects/s-anei/_MG_3189-Edit carciofi-2.jpg"
+                ],
+                [
+                    "/projects/s-anei/IMG_4213-Edit.jpg",
+                    "/projects/s-anei/2.jpg"
+                ],
+                [
+                    "/projects/s-anei/_MG_3194-Edit.jpg",
+                    "/projects/s-anei/IMG_0595.jpg"
+                ]
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Binuforti",
+            "description": [
+                "Binuforti è una cantina che nasce nel 2014 dalla voglia di far diventare realtà un sogno racchiuso in decenni di storia e di tradizione.",
+                "Fonda le sue radici nel territorio dell'Isola di Sant'Antioco, nel sud-ovest della Sardegna, tra i venti che muovono un mare cristallino e delle verdi alture che incorniciano il paesaggio.",
+                "Binuforti è una produzione di nicchia con un vitigno che vanta ben sessant’anni di storia e di lunga tradizione. Le uve crescono nei terreni sabbiosi della piana di Su Pranu, e vengono impiantate a piede franco e coltivate ad alberello latino."
+            ],
+            "services": [
+                "ART DIRECTION",
+                "CONTENT PRODUCTION"
+            ],
+            "collaborations": [],
+            "images": [
+                [
+                    "/projects/binuforti/IMG_4783-Edit.jpg",
+                    "/projects/binuforti/IMG_5171.jpg"
+                ],
+                [
+                    "/projects/binuforti/IMG_4706-Edit-2.jpg",
+                    "/projects/binuforti/IMG_5149.jpg"
+                ],
+                [
+                    "/projects/binuforti/IMG_4689-Edit-Edit.jpg",
+                    "/projects/binuforti/"
+                ],
+                [
+                    "/projects/binuforti/IMG_5054.jpg",
+                    "/projects/binuforti/IMG_4838-Edit.jpg"
+                ],
+                [
+                    "/projects/binuforti/IMG_5199-2.jpg",
+                    "/projects/binuforti/IMG_5233.jpg"
+                ]
             ]
         }
     ]

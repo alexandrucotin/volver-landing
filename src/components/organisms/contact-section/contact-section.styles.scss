@@ -1,7 +1,17 @@
 .contact-section {
+  display: grid;
+
+  @include breakpoint(lg) {
+    grid-template-columns: 1fr 1fr;
+  }
+
   &-image-banner {
-    height: 40vh;
     width: 100%;
+
+    @include breakpoint(lg) {
+      order: 2;
+      padding: 1.5rem;
+    }
     img {
       object-fit: cover;
       object-position: center;
@@ -17,14 +27,13 @@
     flex-direction: column;
     padding: 1.5rem;
     width: 100%;
-    text-align: center;
+
+    @include breakpoint(lg) {
+      order: 1;
+    }
 
     form {
       width: 100%;
-
-      @include breakpoint(md) {
-        width: 50%;
-      }
     }
   }
 }

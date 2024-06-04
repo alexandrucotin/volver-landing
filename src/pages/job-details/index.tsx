@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from "react";
 import data from "../../../public/data/portfolio.json";
 import { useParams } from "react-router-dom";
-import PhotoAlbum from "react-photo-album";
-import photos from "./photos";
 
+interface Collaboration {
+  type: string;
+  names: string[];
+}
 interface JobDetails {
+  id: string;
   title: string;
-  description: string;
-  images: string[];
-  details: string[];
+  description: string[];
+  services: string[];
+  collaborations: Collaboration[];
+  images: string[][];
 }
 
 const JobDetail: React.FC = () => {
@@ -17,7 +21,6 @@ const JobDetail: React.FC = () => {
 
   useEffect(() => {
     if (!id) return;
-    console.log("id", id);
     const jobDetail = data.portfolio.find((job) => job.id === id);
     if (jobDetail) {
       setJobDetails(jobDetail);
@@ -30,26 +33,55 @@ const JobDetail: React.FC = () => {
 
   return (
     <div className="job-detail">
-      <h1 className="job-title">{jobDetails.title}</h1>
-      <p className="job-description">{jobDetails.description}</p>
-      <div className="job-images">
-        {/*         {jobDetails.images.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt={`Job detail ${index + 1}`}
-            className="job-image"
-          />
-        ))} */}
-        <PhotoAlbum photos={photos} layout="masonry" />;
+      <div className="job-detail-content">
+        <div className="job-detail-content-row">
+          <h1 className="job-detail-content-row-title">{jobDetails.title}</h1>
+          <div className="job-detail-content-row-description">
+            {jobDetails.description.map((paragraph) => (
+              <div>{paragraph}</div>
+            ))}
+          </div>
+        </div>
+        <div className="job-detail-content-row">
+          <h1 className="job-detail-content-row">Servizi</h1>
+          <div className="job-detail-content-description">
+            {jobDetails.services.map((service) => (
+              <div>{service}</div>
+            ))}
+          </div>
+        </div>
+        {jobDetails.collaborations.length > 0 && (
+          <div className="job-detail-content-row">
+            <h1 className="job-detail-content-row">Collaborazioni</h1>
+            <div className="job-detail-content-description">
+              {jobDetails.collaborations.map((collab) => (
+                <div>
+                  {collab.type} :
+                  {collab.names.map((name) => (
+                    <span>{name}</span>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
-      <ul className="job-details">
-        {jobDetails.details.map((detail, index) => (
-          <li key={index} className="job-detail-item">
-            {detail}
-          </li>
+      <div className="job-detail-images">
+        {jobDetails.images.map((row, rowIndex) => (
+          <div className="image-row" key={rowIndex}>
+            {row.map((image, imageIndex) => (
+              <div
+                key={imageIndex}
+                className={`image-item ${
+                  row.length === 1 ? "full-width" : "half-width"
+                }`}
+              >
+                <img src={image} alt={`Gallery ${rowIndex}-${imageIndex}`} />
+              </div>
+            ))}
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

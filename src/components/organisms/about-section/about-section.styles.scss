@@ -7,9 +7,13 @@
     "video"
     "content";
 
-  @include breakpoint(md) {
-    grid-template-columns: 1.6fr 1fr;
+  @include breakpoint(lg) {
+    grid-template-columns: 1.4fr 1fr;
     grid-template-areas: "video content";
+  }
+
+  @include breakpoint(xl) {
+    grid-template-columns: 1fr 1fr;
   }
 
   &-video {

@@ -5,8 +5,12 @@ import { motion } from "framer-motion";
 const ContactSection: React.FC = () => {
   const [form] = Form.useForm();
 
-  const onFinish = () => {};
-
+  const onFinish = () => {
+    window.open(`
+    mailto:info@volver.studio?subject=Richiesta-Informazioni&body=${
+      form.getFieldsValue().message
+    }`);
+  };
   return (
     <div className="contact-section">
       <div className="contact-section-image-banner">
@@ -22,34 +26,37 @@ const ContactSection: React.FC = () => {
         <Form form={form} name="contact" layout="vertical" onFinish={onFinish}>
           <Form.Item
             name="name"
-            label="Name"
-            rules={[{ required: true, message: "Please enter your name" }]}
+            label="Nome"
+            rules={[{ required: true, message: "Campo obbligatorio" }]}
           >
-            <Input placeholder="Your name" />
+            <Input placeholder="Il tuo nome" />
           </Form.Item>
 
           <Form.Item
             name="email"
             label="Email"
             rules={[
-              { required: true, message: "Please enter your email" },
-              { type: "email", message: "The input is not valid E-mail!" },
+              { required: true, message: "Campo obbligatorio" },
+              {
+                type: "email",
+                message: "Si prega di inserire un'email valida!",
+              },
             ]}
           >
-            <Input placeholder="Your email" />
+            <Input placeholder="La tua email" />
           </Form.Item>
 
           <Form.Item
             name="message"
-            label="Message"
-            rules={[{ required: true, message: "Please enter your message" }]}
+            label="Messaggio"
+            rules={[{ required: true, message: "Campo obbligatorio" }]}
           >
-            <Input.TextArea rows={4} placeholder="Your message" />
+            <Input.TextArea rows={4} placeholder="Il tuo messaggio" />
           </Form.Item>
 
           <Form.Item>
             <Button type="primary" htmlType="submit">
-              Submit
+              Invia
             </Button>
           </Form.Item>
         </Form>

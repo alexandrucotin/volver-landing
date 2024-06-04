@@ -1,0 +1,51 @@
+.job-detail {
+  display: flex;
+  padding: 1.5rem;
+  flex-direction: column;
+  gap: 10vh;
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+
+    &-row {
+      display: grid;
+
+      @include breakpoint(md) {
+        grid-template-columns: 40% 60%;
+      }
+
+      &-description {
+        line-height: 1.5;
+      }
+    }
+  }
+  .image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spazio tra le righe */
+  }
+
+  .image-row {
+    display: flex;
+  }
+
+  .image-item {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .full-width {
+    flex: 1;
+  }
+
+  .half-width {
+    flex: 0.5;
+  }
+}

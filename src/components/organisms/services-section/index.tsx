@@ -1,7 +1,17 @@
 import React from "react";
 import data from "../../../../public/data/services.json";
+import { Button, Popover } from "antd";
 
 const ServicesSection: React.FC = () => {
+  const returnContent = (content: string[]) => {
+    return (
+      <div className="services-section-content-services-list-item-popover">
+        {content.map((text) => (
+          <p>{text}</p>
+        ))}
+      </div>
+    );
+  };
   return (
     <section className="services-section">
       <div className="services-section-content-services-list">
@@ -11,17 +21,18 @@ const ServicesSection: React.FC = () => {
             key={index}
           >
             <div className="services-section-content-services-list-item-keys">
-              <div className="services-section-content-services-list-item-key">
+              <h1 className="services-section-content-services-list-item-key">
                 {service.key}
-              </div>
+              </h1>
             </div>
             <div className="services-section-content-services-list-item-titles">
-              <div
-                key={index}
-                className="services-section-content-services-list-item-title"
+              <Popover
+                content={returnContent(service.description)}
+                trigger="hover"
+                arrow={false}
               >
-                {service.title}
-              </div>
+                <Button type="text">{service.title}</Button>
+              </Popover>
             </div>
           </div>
         ))}
