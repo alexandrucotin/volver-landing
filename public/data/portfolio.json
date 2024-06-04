@@ -22,26 +22,133 @@
                     ]
                 }
             ],
-            "images": [
+            "media": [
                 [
-                    "/projects/s-anei/_MG_3221-Edit.jpg"
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/s-anei/_MG_3221-Edit.jpg"
+                            }
+                        ],
+                        "width": "100%",
+                        "direction": "row"
+                    }
                 ],
                 [
-                    "/projects/s-anei/1.jpg"
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/s-anei/1.jpg",
+                                "objectPosition": "center 30%",
+                                "width": "40%",
+                                "height": "70%"
+                            }
+                        ],
+                        "width": "100%",
+                        "direction": "row"
+                    }
                 ],
                 [
-                    "/projects/s-anei/ETICHETTA.jpg"
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/s-anei/ETICHETTA.jpg"
+                            }
+                        ],
+                        "width": "100%",
+                        "direction": "row"
+                    }
                 ],
                 [
-                    "/projects/s-anei/_MG_3189-Edit carciofi-2.jpg"
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/s-anei/_MG_3189-Edit carciofi-2.jpg"
+                            }
+                        ],
+                        "width": "100%",
+                        "direction": "row"
+                    }
                 ],
                 [
-                    "/projects/s-anei/IMG_4213-Edit.jpg",
-                    "/projects/s-anei/2.jpg"
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/s-anei/IMG_4213-Edit.jpg"
+                            }
+                        ],
+                        "width": "70%",
+                        "direction": "row"
+                    },
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/s-anei/2.jpg",
+                                "height": "80%",
+                                "margin": "0 20px"
+                            }
+                        ],
+                        "width": "30%",
+                        "direction": "row"
+                    }
                 ],
                 [
-                    "/projects/s-anei/_MG_3194-Edit.jpg",
-                    "/projects/s-anei/IMG_0595.jpg"
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/s-anei/_MG_3244-Edit-2-Edit-Edit.jpg"
+                            }
+                        ],
+                        "width": "70%",
+                        "direction": "row"
+                    },
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/s-anei/IMG_4209.jpg",
+                                "height": "50%"
+                            },
+                            {
+                                "type": "image",
+                                "src": "/projects/s-anei/_MG_3177-Edit.jpg",
+                                "height": "50%"
+                            }
+                        ],
+                        "width": "30%",
+                        "direction": "column"
+                    }
+                ],
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/s-anei/_MG_3194-Edit.jpg"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    },
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/s-anei/IMG_0595.jpg",
+                                "width": "50%",
+                                "height": "60%"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    }
                 ]
             ]
         },
@@ -58,26 +165,251 @@
                 "CONTENT PRODUCTION"
             ],
             "collaborations": [],
-            "images": [
+            "media": [
                 [
-                    "/projects/binuforti/IMG_4783-Edit.jpg",
-                    "/projects/binuforti/IMG_5171.jpg"
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/binuforti/IMG_4783-Edit.jpg"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    },
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/binuforti/IMG_5171.jpg"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    }
                 ],
                 [
-                    "/projects/binuforti/IMG_4706-Edit-2.jpg",
-                    "/projects/binuforti/IMG_5149.jpg"
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/binuforti/IMG_4706-Edit-2.jpg"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    },
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/binuforti/IMG_5149.jpg"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    }
                 ],
                 [
-                    "/projects/binuforti/IMG_4689-Edit-Edit.jpg",
-                    "/projects/binuforti/"
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/binuforti/IMG_4689-Edit-Edit.jpg"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    },
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/binuforti/"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    }
                 ],
                 [
-                    "/projects/binuforti/IMG_5054.jpg",
-                    "/projects/binuforti/IMG_4838-Edit.jpg"
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/binuforti/IMG_5054.jpg"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    },
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/binuforti/IMG_4838-Edit.jpg"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    }
                 ],
                 [
-                    "/projects/binuforti/IMG_5199-2.jpg",
-                    "/projects/binuforti/IMG_5233.jpg"
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/binuforti/IMG_5199-2.jpg"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    },
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/binuforti/IMG_5233.jpg"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    }
+                ]
+            ]
+        },
+        {
+            "id": "3",
+            "title": "Luca Carta",
+            "description": [
+                "Luca Carta è un educatore cinofilo a Londra. Esperto nella relazione tra umano-cane, aiuta le persone nell’educazione, comunicazione e correzione, nel caso sia necessario, di alcuni comportamenti dei cani.",
+                "Ha iniziato la sua attività dopo la sua qualifica in dog training. Ha aperto la sua attività a Londra e porta avanti i valori come la fiducia, l’amore, il rispetto per i nostri amici a quattro zampe."
+            ],
+            "services": [
+                "BRANDING",
+                "WEB DESIGN",
+                "ART DIRECTION"
+            ],
+            "collaborations": [],
+            "media": [
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/luca-carta/brand identity luca x social volver_Quadrato (per Instagram) 1080 x 1080-01.png"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    },
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/luca-carta/brand identity luca x social volver_Quadrato (per Instagram) 1080 x 1080-02.png"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    }
+                ],
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/luca-carta/brand identity luca x social volver_Quadrato (per Instagram) 1080 x 1080-04.png"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    },
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/luca-carta/brand identity luca x social volver_Quadrato (per Instagram) 1080 x 1080-05.png"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    }
+                ],
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/luca-carta/merch.jpg"
+                            }
+                        ],
+                        "width": "100%",
+                        "direction": "row"
+                    }
+                ],
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "video",
+                                "src": "/projects/luca-carta/Luca x volver.mp4"
+                            }
+                        ],
+                        "width": "100%",
+                        "direction": "row"
+                    }
+                ],
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/luca-carta/brand identity luca x social volver_Quadrato (per Instagram) 1080 x 1080-03.png"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    },
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/luca-carta/brand identity luca x social volver_Quadrato (per Instagram) 1080 x 1080-06.png"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    }
+                ]
+            ]
+        },
+        {
+            "id": "4",
+            "headerVideo": "",
+            "title": "10 days in Parte Montis",
+            "description": [
+                "10 days in Parte Montis è un progetto di innovazione digitale per il patrimonio culturale realizzato da Volver Studio.",
+                "Nato per facilitare la conoscenza e la promozione dell'immenso patrimonio culturale e identitario del Parte Montis, porzione territoriale della Marmilla in Sardegna.",
+                "Il progetto mette in rete le bellezze storiche, culturali ed enogastronomiche del territorio, rendendo accessibili le informazioni necessarie per visitare le attrattività del luogo, offrendo un modello di fruizione, accessibile, “sostenibile” e integrato."
+            ],
+            "services": [
+                "ART DIRECTION",
+                "WEB DESIGN"
+            ],
+            "collaborations": [],
+            "media": [
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "video",
+                                "src": "/projects/10-days-parte-montis/forme-10-days.mp4"
+                            }
+                        ],
+                        "width": "100%",
+                        "direction": "row"
+                    }
                 ]
             ]
         }

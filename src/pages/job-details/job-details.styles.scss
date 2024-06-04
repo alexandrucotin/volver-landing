@@ -15,6 +15,10 @@
         grid-template-columns: 40% 60%;
       }
 
+      &-client-title {
+        font-size: 4rem;
+      }
+
       &-title {
         font-size: 1.5rem;
         margin-bottom: 0.5rem;
@@ -25,43 +29,39 @@
       }
     }
   }
-  .image-gallery {
+
+  .portfolio-media {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Spazio tra le righe */
   }
 
-  .image-row {
+  .media-row {
     display: flex;
   }
 
-  .image-item {
+  .media-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .media-item {
     position: relative;
     overflow: hidden;
   }
 
-  .image-item img {
+  .media-item img,
+  .media-item video {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    object-fit: cover;
   }
+}
 
-  .full-width {
-    flex: 1;
-  }
+.row {
+  flex-direction: row;
+}
 
-  .half-width {
-    flex: 0.5;
-  }
-
-  /* Media query per schermi mobili */
-  @media (max-width: 768px) {
-    .image-row {
-      flex-direction: column;
-    }
-
-    .image-item {
-      flex: 1 0 100%;
-    }
-  }
+.column {
+  flex-direction: column;
 }
