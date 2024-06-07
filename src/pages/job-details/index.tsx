@@ -4,6 +4,7 @@ import data from "../../../public/data/portfolio.json";
 import { useParams } from "react-router-dom";
 import { JobDetails, MediaItem, MediaRow } from "./job-details.types";
 import { Grid } from "antd";
+import { motion } from "framer-motion";
 
 const { useBreakpoint } = Grid;
 
@@ -11,6 +12,16 @@ const JobDetail: React.FC = () => {
   const screens = useBreakpoint();
   const [jobDetails, setJobDetails] = useState<JobDetails | null>(null);
   const { id } = useParams();
+
+  const pageVariants = {
+    initial: { opacity: 0 },
+    in: { opacity: 1 },
+    out: { opacity: 0 },
+  };
+
+  const pageTransition = {
+    duration: 1,
+  };
 
   useEffect(() => {
     if (!id) return;
@@ -25,7 +36,6 @@ const JobDetail: React.FC = () => {
   }
 
   const getMediaItemWidth = (item: MediaItem) => {
-    console.log("screens", screens);
     if (screens.xs || !item.width) {
       return "100%";
     }
@@ -55,41 +65,58 @@ const JobDetail: React.FC = () => {
   };
 
   return (
-    <div className="job-detail">
+    <motion.div
+      className="job-detail"
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
       <div className="job-detail-content">
-        <div className="job-detail-content-row">
-          <h1 className="job-detail-content-row-client-title">
-            {jobDetails.title}
-          </h1>
-          <div className="job-detail-content-row-description">
-            {jobDetails.description.map((paragraph) => (
-              <div>{paragraph}</div>
+        <h1 className="job-detail-content-client-title">{jobDetails.title}</h1>
+        <div className="job-detail-content-details">
+          <div className="job-detail-content-details-paragraphs">
+            {jobDetails.description.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
             ))}
           </div>
-        </div>
-        <div className="job-detail-content-row">
-          <div className="job-detail-content-row-title">Servizi</div>
-          <div className="job-detail-content-description">
-            {jobDetails.services.map((service) => (
-              <div>{service}</div>
-            ))}
-          </div>
-        </div>
-        {jobDetails.collaborations.length > 0 && (
-          <div className="job-detail-content-row">
-            <div className="job-detail-content-row-title">Collaborazioni</div>
-            <div className="job-detail-content-description">
-              {jobDetails.collaborations.map((collab) => (
-                <div>
-                  {collab.type} :
-                  {collab.names.map((name) => (
-                    <span>{name}</span>
+          {jobDetails.services && jobDetails.services.length > 0 && (
+            <div className="job-detail-content-details-row">
+              <div className="job-detail-content-details-row-title">
+                SERVIZI
+              </div>
+              <div className="job-detail-content-details-row-content">
+                {jobDetails.services.map((service, index) => (
+                  <div key={index}>
+                    {service}{" "}
+                    {index + 1 !== jobDetails.services!.length &&
+                      (screens.md || screens.lg || screens.xl || screens.xxl) &&
+                      "-"}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+          {jobDetails.collaborations &&
+            jobDetails.collaborations.length > 0 && (
+              <div className="job-detail-content-details-row">
+                <div className="job-detail-content-details-row-title">
+                  COLLABORAZIONI
+                </div>
+                <div className="job-detail-content-details-row-content">
+                  {jobDetails.collaborations.map((collab, index) => (
+                    <div key={index}>
+                      {collab.type}:
+                      {collab.names.map((name) => (
+                        <span> {name}</span>
+                      ))}
+                    </div>
                   ))}
                 </div>
-              ))}
-            </div>
-          </div>
-        )}
+              </div>
+            )}
+        </div>
       </div>
       <div className="portfolio-media">
         {jobDetails.media.map((mediaRow, rowIndex) => (
@@ -123,7 +150,7 @@ const JobDetail: React.FC = () => {
                         }}
                       />
                     ) : (
-                      <video autoPlay muted playsInline>
+                      <video autoPlay muted loop playsInline>
                         <source src={item.src} type="video/mp4" />
                       </video>
                     )}
@@ -134,7 +161,7 @@ const JobDetail: React.FC = () => {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

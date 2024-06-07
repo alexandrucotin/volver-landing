@@ -3,27 +3,27 @@
         {
             "src": "/projects/luca-carta/merch.jpg",
             "margin": {
-                "desktop": "0 0 0  0",
+                "desktop": "0 0 0 0",
                 "tablet": "0 0 0 0",
                 "mobile": "0 0 15% 10%"
             },
-            "backgroundColor": "lightgray",
+            "backgroundColor": "#FF5757",
             "width": {
                 "desktop": "40%",
                 "tablet": "50%",
                 "mobile": "75%"
             },
             "zIndex": 2,
-            "projectId": "3"
+            "projectId": "1"
         },
         {
-            "src": "/projects/binuforti/IMG_4838-Edit.jpg",
+            "src": "/projects/binuforti/IMG_4783-Edit.jpg",
             "margin": {
-                "desktop": "-5% 0 0 60%",
+                "desktop": "-15% 0 0 60%",
                 "tablet": "-10% 0 0 auto",
                 "mobile": "0 0 10% auto"
             },
-            "backgroundColor": "green",
+            "backgroundColor": "#5271FF",
             "width": {
                 "desktop": "25%",
                 "tablet": "40%",
@@ -33,29 +33,29 @@
             "projectId": "2"
         },
         {
-            "src": "/projects/s-anei/_MG_3244-Edit-2-Edit-Edit.jpg",
+            "src": "/projects/s-anei/_MG_3221-Edit.jpg",
             "margin": {
                 "desktop": "0 0 0 10%",
                 "tablet": "15% 15% -10% 10%",
                 "mobile": "0 0 10% 0"
             },
-            "backgroundColor": "blue",
+            "backgroundColor": "#FFDE59",
             "width": {
                 "desktop": "30%",
                 "tablet": "45%",
                 "mobile": "55%"
             },
             "zIndex": 2,
-            "projectId": "1"
+            "projectId": "3"
         },
         {
-            "src": "/projects/su-trobasciu/305867283_1202064917035710_1958534126085849715_n.jpg",
+            "src": "/projects/su-trobasciu/IMG_3883 2.jpg",
             "margin": {
                 "desktop": "-10% 0 0 auto",
                 "tablet": "20% 0 0 auto",
                 "mobile": "0 0 10% auto"
             },
-            "backgroundColor": "orange",
+            "backgroundColor": "#FF914D",
             "width": {
                 "desktop": "35%",
                 "tablet": "40%",
@@ -63,6 +63,38 @@
             },
             "zIndex": 0,
             "projectId": "4"
+        },
+        {
+            "src": "/projects/10-days-parte-montis/_MG_8831.jpg",
+            "margin": {
+                "desktop": "-10% 0 0 auto",
+                "tablet": "20% 0 0 auto",
+                "mobile": "0 0 10% auto"
+            },
+            "backgroundColor": "#CB6CE6",
+            "width": {
+                "desktop": "35%",
+                "tablet": "40%",
+                "mobile": "55%"
+            },
+            "zIndex": 0,
+            "projectId": "5"
+        },
+        {
+            "src": "/projects/su-trobasciu/BAG 1.png",
+            "margin": {
+                "desktop": "-10% 0 0 auto",
+                "tablet": "20% 0 0 auto",
+                "mobile": "0 0 10% auto"
+            },
+            "backgroundColor": "#FF66C4",
+            "width": {
+                "desktop": "35%",
+                "tablet": "40%",
+                "mobile": "55%"
+            },
+            "zIndex": 0,
+            "projectId": "6"
         }
     ]
 }

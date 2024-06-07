@@ -2,6 +2,238 @@
     "portfolio": [
         {
             "id": "1",
+            "title": "Luca Carta",
+            "description": [
+                "Luca Carta è un educatore cinofilo a Londra. Esperto nella relazione tra umano-cane, aiuta le persone nell’educazione, comunicazione e correzione, nel caso sia necessario, di alcuni comportamenti dei cani.",
+                "Ha iniziato la sua attività dopo la sua qualifica in dog training. Ha aperto la sua attività a Londra e porta avanti i valori come la fiducia, l’amore, il rispetto per i nostri amici a quattro zampe."
+            ],
+            "services": [
+                "BRANDING",
+                "WEB DESIGN",
+                "ART DIRECTION"
+            ],
+            "collaborations": [],
+            "media": [
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/luca-carta/brand identity luca x social volver_Quadrato (per Instagram) 1080 x 1080-01.png"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    },
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/luca-carta/brand identity luca x social volver_Quadrato (per Instagram) 1080 x 1080-02.png"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    }
+                ],
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/luca-carta/brand identity luca x social volver_Quadrato (per Instagram) 1080 x 1080-04.png"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    },
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/luca-carta/brand identity luca x social volver_Quadrato (per Instagram) 1080 x 1080-05.png"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    }
+                ],
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/luca-carta/merch.jpg"
+                            }
+                        ],
+                        "width": "100%",
+                        "direction": "row"
+                    }
+                ],
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "video",
+                                "src": "/projects/luca-carta/Luca x volver.mp4"
+                            }
+                        ],
+                        "width": "100%",
+                        "direction": "row"
+                    }
+                ],
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/luca-carta/brand identity luca x social volver_Quadrato (per Instagram) 1080 x 1080-03.png"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    },
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/luca-carta/brand identity luca x social volver_Quadrato (per Instagram) 1080 x 1080-06.png"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    }
+                ]
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Binuforti",
+            "description": [
+                "Binuforti è una cantina che nasce nel 2014 dalla voglia di far diventare realtà un sogno racchiuso in decenni di storia e di tradizione.",
+                "Fonda le sue radici nel territorio dell'Isola di Sant'Antioco, nel sud-ovest della Sardegna, tra i venti che muovono un mare cristallino e delle verdi alture che incorniciano il paesaggio.",
+                "Binuforti è una produzione di nicchia con un vitigno che vanta ben sessant’anni di storia e di lunga tradizione. Le uve crescono nei terreni sabbiosi della piana di Su Pranu, e vengono impiantate a piede franco e coltivate ad alberello latino."
+            ],
+            "services": [
+                "ART DIRECTION",
+                "CONTENT PRODUCTION"
+            ],
+            "collaborations": [],
+            "media": [
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/binuforti/IMG_4783-Edit.jpg"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    },
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/binuforti/IMG_5171.jpg"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    }
+                ],
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/binuforti/IMG_4706-Edit-2.jpg"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    },
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/binuforti/IMG_5149.jpg"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    }
+                ],
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/binuforti/IMG_4689-Edit-Edit.jpg"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    },
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/binuforti/IMG_5000-Edit-2.jpg"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    }
+                ],
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/binuforti/IMG_5054.jpg"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    },
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/binuforti/IMG_4838-Edit.jpg"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    }
+                ],
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/binuforti/IMG_5199-2.jpg"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    },
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/binuforti/IMG_5233.jpg"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    }
+                ]
+            ]
+        },
+        {
+            "id": "3",
             "title": "S’anei",
             "description": [
                 "S’anei è una zona rurale nel cuore della Marmilla, in Sardegna da una tessera ecologica con il suolo prevalentemente sabbioso, da qui S’anei in italiano “sabbia”.",
@@ -153,15 +385,15 @@
             ]
         },
         {
-            "id": "2",
-            "title": "Binuforti",
+            "id": "4",
+            "title": "Su Trobasciu",
             "description": [
-                "Binuforti è una cantina che nasce nel 2014 dalla voglia di far diventare realtà un sogno racchiuso in decenni di storia e di tradizione.",
-                "Fonda le sue radici nel territorio dell'Isola di Sant'Antioco, nel sud-ovest della Sardegna, tra i venti che muovono un mare cristallino e delle verdi alture che incorniciano il paesaggio.",
-                "Binuforti è una produzione di nicchia con un vitigno che vanta ben sessant’anni di storia e di lunga tradizione. Le uve crescono nei terreni sabbiosi della piana di Su Pranu, e vengono impiantate a piede franco e coltivate ad alberello latino."
+                "Su Trobasciu è una cooperativa artigianale di tessitrici situato a Mogoro, nel sud della Sardegna. Azienda condotta da sole donne, è attiva dal 1978, portando avanti fieramente la tessitura con telai manuali. Vantano numerose collaborazioni con artisti e partecipano a progetti di rivisitazione della tessitura tradizionale.",
+                "Dallo studio accurato della tradizione, dall’attento abbinamento di filati naturali, tecniche antiche, simboli e disegni tradizionali nascono i loro prodotti: arazzi, tappeti, bisacce e cuscini. Oggetti che danno l’idea del piacere di possedere ciò che la storia ha reso prezioso, perché ogni manufatto è unico e ha qualcosa da raccontare."
             ],
             "services": [
                 "ART DIRECTION",
+                "DESIGN",
                 "CONTENT PRODUCTION"
             ],
             "collaborations": [],
@@ -171,189 +403,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/binuforti/IMG_4783-Edit.jpg"
-                            }
-                        ],
-                        "width": "50%",
-                        "direction": "row"
-                    },
-                    {
-                        "items": [
-                            {
-                                "type": "image",
-                                "src": "/projects/binuforti/IMG_5171.jpg"
-                            }
-                        ],
-                        "width": "50%",
-                        "direction": "row"
-                    }
-                ],
-                [
-                    {
-                        "items": [
-                            {
-                                "type": "image",
-                                "src": "/projects/binuforti/IMG_4706-Edit-2.jpg"
-                            }
-                        ],
-                        "width": "50%",
-                        "direction": "row"
-                    },
-                    {
-                        "items": [
-                            {
-                                "type": "image",
-                                "src": "/projects/binuforti/IMG_5149.jpg"
-                            }
-                        ],
-                        "width": "50%",
-                        "direction": "row"
-                    }
-                ],
-                [
-                    {
-                        "items": [
-                            {
-                                "type": "image",
-                                "src": "/projects/binuforti/IMG_4689-Edit-Edit.jpg"
-                            }
-                        ],
-                        "width": "50%",
-                        "direction": "row"
-                    },
-                    {
-                        "items": [
-                            {
-                                "type": "image",
-                                "src": "/projects/binuforti/"
-                            }
-                        ],
-                        "width": "50%",
-                        "direction": "row"
-                    }
-                ],
-                [
-                    {
-                        "items": [
-                            {
-                                "type": "image",
-                                "src": "/projects/binuforti/IMG_5054.jpg"
-                            }
-                        ],
-                        "width": "50%",
-                        "direction": "row"
-                    },
-                    {
-                        "items": [
-                            {
-                                "type": "image",
-                                "src": "/projects/binuforti/IMG_4838-Edit.jpg"
-                            }
-                        ],
-                        "width": "50%",
-                        "direction": "row"
-                    }
-                ],
-                [
-                    {
-                        "items": [
-                            {
-                                "type": "image",
-                                "src": "/projects/binuforti/IMG_5199-2.jpg"
-                            }
-                        ],
-                        "width": "50%",
-                        "direction": "row"
-                    },
-                    {
-                        "items": [
-                            {
-                                "type": "image",
-                                "src": "/projects/binuforti/IMG_5233.jpg"
-                            }
-                        ],
-                        "width": "50%",
-                        "direction": "row"
-                    }
-                ]
-            ]
-        },
-        {
-            "id": "3",
-            "title": "Luca Carta",
-            "description": [
-                "Luca Carta è un educatore cinofilo a Londra. Esperto nella relazione tra umano-cane, aiuta le persone nell’educazione, comunicazione e correzione, nel caso sia necessario, di alcuni comportamenti dei cani.",
-                "Ha iniziato la sua attività dopo la sua qualifica in dog training. Ha aperto la sua attività a Londra e porta avanti i valori come la fiducia, l’amore, il rispetto per i nostri amici a quattro zampe."
-            ],
-            "services": [
-                "BRANDING",
-                "WEB DESIGN",
-                "ART DIRECTION"
-            ],
-            "collaborations": [],
-            "media": [
-                [
-                    {
-                        "items": [
-                            {
-                                "type": "image",
-                                "src": "/projects/luca-carta/brand identity luca x social volver_Quadrato (per Instagram) 1080 x 1080-01.png"
-                            }
-                        ],
-                        "width": "50%",
-                        "direction": "row"
-                    },
-                    {
-                        "items": [
-                            {
-                                "type": "image",
-                                "src": "/projects/luca-carta/brand identity luca x social volver_Quadrato (per Instagram) 1080 x 1080-02.png"
-                            }
-                        ],
-                        "width": "50%",
-                        "direction": "row"
-                    }
-                ],
-                [
-                    {
-                        "items": [
-                            {
-                                "type": "image",
-                                "src": "/projects/luca-carta/brand identity luca x social volver_Quadrato (per Instagram) 1080 x 1080-04.png"
-                            }
-                        ],
-                        "width": "50%",
-                        "direction": "row"
-                    },
-                    {
-                        "items": [
-                            {
-                                "type": "image",
-                                "src": "/projects/luca-carta/brand identity luca x social volver_Quadrato (per Instagram) 1080 x 1080-05.png"
-                            }
-                        ],
-                        "width": "50%",
-                        "direction": "row"
-                    }
-                ],
-                [
-                    {
-                        "items": [
-                            {
-                                "type": "image",
-                                "src": "/projects/luca-carta/merch.jpg"
-                            }
-                        ],
-                        "width": "100%",
-                        "direction": "row"
-                    }
-                ],
-                [
-                    {
-                        "items": [
-                            {
-                                "type": "video",
-                                "src": "/projects/luca-carta/Luca x volver.mp4"
+                                "src": "/projects/su-trobasciu/ghirlanda 4x5.jpg"
                             }
                         ],
                         "width": "100%",
@@ -365,7 +415,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/luca-carta/brand identity luca x social volver_Quadrato (per Instagram) 1080 x 1080-03.png"
+                                "src": "/projects/su-trobasciu/IMG_1802.jpeg"
                             }
                         ],
                         "width": "50%",
@@ -375,7 +425,77 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/luca-carta/brand identity luca x social volver_Quadrato (per Instagram) 1080 x 1080-06.png"
+                                "src": "/projects/su-trobasciu/ghirlanda 4x5.jpg"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    }
+                ],
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/su-trobasciu/191990348_3831793893595630_8553940133805357248_n.jpg"
+                            }
+                        ],
+                        "width": "100%",
+                        "direction": "row"
+                    }
+                ],
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/su-trobasciu/163584930_1167628513658884_3742173283419651020_n.jpg"
+                            }
+                        ],
+                        "width": "100%",
+                        "direction": "row"
+                    }
+                ],
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/su-trobasciu/layout 1.jpg"
+                            }
+                        ],
+                        "width": "100%",
+                        "direction": "row"
+                    }
+                ],
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/su-trobasciu/195786223_527509181607624_5417304936021213858_n.jpg"
+                            }
+                        ],
+                        "width": "100%",
+                        "direction": "row"
+                    }
+                ],
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/su-trobasciu/IMG_3883 2.jpg"
+                            }
+                        ],
+                        "width": "50%",
+                        "direction": "row"
+                    },
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/su-trobasciu/IMG_3919 2.jpg"
                             }
                         ],
                         "width": "50%",
@@ -385,8 +505,8 @@
             ]
         },
         {
-            "id": "4",
-            "headerVideo": "",
+            "id": "5",
+            "headerVideo": "/projects/10-days-parte-montis/sito volver - parte 10days (3).mp4",
             "title": "10 days in Parte Montis",
             "description": [
                 "10 days in Parte Montis è un progetto di innovazione digitale per il patrimonio culturale realizzato da Volver Studio.",
@@ -405,6 +525,100 @@
                             {
                                 "type": "video",
                                 "src": "/projects/10-days-parte-montis/forme-10-days.mp4"
+                            }
+                        ],
+                        "width": "100%",
+                        "direction": "row"
+                    }
+                ],
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "video",
+                                "src": "/projects/10-days-parte-montis/sito volver - parte 10days.mp4"
+                            }
+                        ],
+                        "width": "100%",
+                        "direction": "row"
+                    }
+                ],
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "video",
+                                "src": "/projects/10-days-parte-montis/sito volver - parte 10days (1).mp4"
+                            }
+                        ],
+                        "width": "100%",
+                        "direction": "row"
+                    }
+                ],
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "video",
+                                "src": "/projects/10-days-parte-montis/sito volver - parte 10days (2).mp4"
+                            }
+                        ],
+                        "width": "100%",
+                        "direction": "row"
+                    }
+                ]
+            ]
+        },
+        {
+            "id": "6",
+            "title": "DESIGN",
+            "description": [
+                "Materiali, volumi, colori.",
+                "Volver disegna, crea, trasforma."
+            ],
+            "media": [
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/su-trobasciu/ZOOM BAG.jpg"
+                            }
+                        ],
+                        "width": "100%",
+                        "direction": "row"
+                    }
+                ],
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/su-trobasciu/BAG 1.png"
+                            }
+                        ],
+                        "width": "100%",
+                        "direction": "row"
+                    }
+                ],
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/su-trobasciu/SISTER CARPETS.jpg"
+                            }
+                        ],
+                        "width": "100%",
+                        "direction": "row"
+                    }
+                ],
+                [
+                    {
+                        "items": [
+                            {
+                                "type": "image",
+                                "src": "/projects/su-trobasciu/_MG_9618.jpg"
                             }
                         ],
                         "width": "100%",

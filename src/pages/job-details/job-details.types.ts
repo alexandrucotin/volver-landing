@@ -21,7 +21,7 @@ export interface JobDetails {
   id: string;
   title: string;
   description: string[];
-  services: string[];
-  collaborations: Collaboration[];
+  services?: string[];
+  collaborations?: Collaboration[];
   media: MediaRow[][];
 }

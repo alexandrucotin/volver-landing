@@ -3,29 +3,57 @@
   padding: 1.5rem;
   flex-direction: column;
   gap: 2.5vh;
-  &-content {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5vh;
 
-    &-row {
-      display: grid;
+  &-content {
+    display: grid;
+
+    @include breakpoint(md) {
+      grid-template-columns: 30% 70%;
+    }
+
+    &-client-title {
+      font-size: 4rem;
 
       @include breakpoint(md) {
-        grid-template-columns: 40% 60%;
+        margin-bottom: 0;
+      }
+    }
+
+    &-details {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      @include breakpoint(md) {
+        margin-top: 1.6rem;
       }
 
-      &-client-title {
-        font-size: 4rem;
-      }
-
-      &-title {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-      }
-
-      &-description {
+      &-paragraphs {
         line-height: 1.5;
+      }
+
+      &-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+
+        @include breakpoint(md) {
+          grid-template-columns: 30% 1fr;
+        }
+
+        &-title {
+          font-weight: bold;
+        }
+
+        &-content {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+
+          @include breakpoint(md) {
+            flex-direction: row;
+          }
+        }
       }
     }
   }
