@@ -1,8 +1,6 @@
 // ProtectedRoute.tsx
 import React from "react";
 import { Navigate, useLocation } from "react-router-dom";
-import Menu from "../components/organisms/navbar";
-
 interface ProtectedRouteProps {
   children: React.ReactNode;
 }
@@ -20,7 +18,6 @@ const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children }) => {
       className=""
       style={{ maxWidth: 1440, margin: "0 auto", position: "relative" }}
     >
-      <Menu />
       {children}
     </div>
   );

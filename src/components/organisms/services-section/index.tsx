@@ -6,8 +6,8 @@ const ServicesSection: React.FC = () => {
   const returnContent = (content: string[]) => {
     return (
       <div className="services-section-content-services-list-item-popover">
-        {content.map((text) => (
-          <p>{text}</p>
+        {content.map((text, index) => (
+          <p key={index}>{text}</p>
         ))}
       </div>
     );
@@ -27,6 +27,7 @@ const ServicesSection: React.FC = () => {
             </div>
             <div className="services-section-content-services-list-item-titles">
               <Popover
+                color="#b0241c"
                 content={returnContent(service.description)}
                 trigger="hover"
                 arrow={false}

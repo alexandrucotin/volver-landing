@@ -1,6 +1,5 @@
 // App.tsx
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
 import { ConfigProvider } from "antd";
 import AnimatedRoutes from "./core/animated-route";
 
@@ -16,9 +15,7 @@ const App: React.FC = () => {
         components: {},
       }}
     >
-      <Router>
-        <AnimatedRoutes />
-      </Router>
+      <AnimatedRoutes />
     </ConfigProvider>
   );
 };

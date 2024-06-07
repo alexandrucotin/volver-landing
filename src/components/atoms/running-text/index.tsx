@@ -75,10 +75,10 @@ const RunningText: React.FC = () => {
   return (
     <div className="running-text">
       <ParallaxText baseVelocity={-1}>
-        Everything starts with a "Ciao"
+        Everything starts with a "Ciao"&nbsp;&nbsp;
       </ParallaxText>
       <ParallaxText baseVelocity={1}>
-        Everything starts with a "Ciao"
+        Everything starts with a "Ciao"&nbsp;&nbsp;
       </ParallaxText>
     </div>
   );

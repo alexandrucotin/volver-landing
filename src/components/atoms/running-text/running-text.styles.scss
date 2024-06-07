@@ -3,7 +3,6 @@
 }
 .parallax {
   overflow: hidden;
-  letter-spacing: -2px;
   line-height: 0.8;
   margin: 0;
   white-space: nowrap;
@@ -21,7 +20,7 @@
   flex-wrap: nowrap;
 }
 
-.parallax h1 {
+.parallax h2 {
   display: block;
   margin-right: 30px;
 }

@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import shortLogo from "../../../assets/short_logo.png";
 
 const Menu: React.FC = () => {
   return (
     <div className="navbar">
       <div className="navbar-logo-container">
         <Link to="/landing">
-          <img src="./short_logo.png" alt="" />
+          <img src={shortLogo} alt="" />
         </Link>
       </div>
 
