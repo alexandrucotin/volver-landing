@@ -68,7 +68,7 @@
             "src": "/projects/10-days-parte-montis/_MG_8831.jpg",
             "margin": {
                 "desktop": "-10% 0 0 auto",
-                "tablet": "20% 0 0 auto",
+                "tablet": "-10% 0 0 10%",
                 "mobile": "0 0 10% auto"
             },
             "backgroundColor": "#CB6CE6",

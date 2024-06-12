@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import data from "../../../public/data/portfolio.json";
 import { useParams } from "react-router-dom";
 import { JobDetails, MediaItem, MediaRow } from "./job-details.types";
@@ -12,6 +12,9 @@ const JobDetail: React.FC = () => {
   const screens = useBreakpoint();
   const [jobDetails, setJobDetails] = useState<JobDetails | null>(null);
   const { id } = useParams();
+
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isMuted, setIsMuted] = useState(true);
 
   const pageVariants = {
     initial: { opacity: 0 },
@@ -64,6 +67,12 @@ const JobDetail: React.FC = () => {
     return item.margin;
   };
 
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !isMuted;
+      setIsMuted(!isMuted);
+    }
+  };
   return (
     <motion.div
       className="job-detail"
@@ -73,6 +82,13 @@ const JobDetail: React.FC = () => {
       variants={pageVariants}
       transition={pageTransition}
     >
+      {jobDetails.headerVideo && (
+        <div className="job-detail-header-video-container">
+          <video autoPlay muted loop playsInline>
+            <source src={jobDetails.headerVideo} type="video/mp4" />
+          </video>
+        </div>
+      )}
       <div className="job-detail-content">
         <h1 className="job-detail-content-client-title">{jobDetails.title}</h1>
         <div className="job-detail-content-details">
@@ -128,6 +144,8 @@ const JobDetail: React.FC = () => {
                 style={{
                   flexDirection: mediaGroup.direction as any,
                   width: getMediaGroupWidth(mediaGroup),
+                  justifyContent: mediaGroup.justify || "center",
+                  alignItems: mediaGroup.align || "center",
                 }}
               >
                 {mediaGroup.items.map((item, itemIndex) => (
@@ -147,12 +165,23 @@ const JobDetail: React.FC = () => {
                         alt={`Media ${itemIndex}`}
                         style={{
                           objectPosition: item.objectPosition || "center",
+                          objectFit: item.objectFit || ("cover" as any),
                         }}
                       />
                     ) : (
-                      <video autoPlay muted loop playsInline>
-                        <source src={item.src} type="video/mp4" />
-                      </video>
+                      <>
+                        <video ref={videoRef} autoPlay muted loop playsInline>
+                          <source src={item.src} type="video/mp4" />
+                        </video>
+                        {item.unmute && (
+                          <button
+                            className="about-page-video-mute-button"
+                            onClick={toggleMute}
+                          >
+                            {isMuted ? "Unmute" : "Mute"}
+                          </button>
+                        )}
+                      </>
                     )}
                   </div>
                 ))}

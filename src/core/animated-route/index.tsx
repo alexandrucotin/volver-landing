@@ -11,7 +11,7 @@ import JobDetail from "../../pages/job-details";
 import WorkInProgressPage from "../../pages/work-in-progress";
 import Auth from "../../pages/auth/auth";
 import { useState } from "react";
-import { Menu } from "antd";
+import Menu from "../../components/organisms/navbar";
 
 const AppLayout = () => (
   <div
@@ -41,12 +41,15 @@ const AnimatedRoutes: React.FC = () => {
       children: [
         { path: "landing", element: <LandingPage /> },
         { path: "portfolio/:id", element: <JobDetail /> },
-        /* errorElement: <Error />, */
       ],
     },
     {
       element: <WorkInProgressPage />,
       path: "/",
+    },
+    {
+      element: <div>Page not found</div>,
+      path: "/*",
     },
   ]);
   return (

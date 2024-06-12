@@ -4,6 +4,14 @@
   flex-direction: column;
   gap: 2.5vh;
 
+  &-header-video-container {
+    width: 100%;
+
+    video {
+      object-fit: contain;
+      width: 100%;
+    }
+  }
   &-content {
     display: grid;
 
@@ -13,6 +21,7 @@
 
     &-client-title {
       font-size: 4rem;
+      line-height: 1;
 
       @include breakpoint(md) {
         margin-bottom: 0;
@@ -25,7 +34,7 @@
       gap: 1.5rem;
 
       @include breakpoint(md) {
-        margin-top: 1.6rem;
+        margin-top: 1.3rem;
       }
 
       &-paragraphs {
@@ -69,8 +78,6 @@
 
   .media-group {
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .media-item {
