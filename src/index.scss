@@ -43,3 +43,8 @@ body {
     font-style: italic;
   }
 }
+
+.no-scroll {
+  overflow: hidden;
+  pointer-events: none;
+}

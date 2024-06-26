@@ -1,4 +1,4 @@
-// ProtectedRoute.tsx
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from "react";
 import { Navigate, useLocation } from "react-router-dom";
 interface ProtectedRouteProps {
@@ -13,14 +13,7 @@ const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children }) => {
     return <Navigate to="/login" state={{ from: location }} />;
   }
 
-  return (
-    <div
-      className=""
-      style={{ maxWidth: 1440, margin: "0 auto", position: "relative" }}
-    >
-      {children}
-    </div>
-  );
+  return <div>{children}</div>;
 };
 
 export default ProtectedRoute;

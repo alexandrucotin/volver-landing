@@ -1,7 +1,7 @@
 {
     "imgs": [
         {
-            "src": "/projects/luca-carta/merch.jpg",
+            "src": "/projects/luca-carta/luca-carta-merch.jpg",
             "margin": {
                 "desktop": "0 0 0 0",
                 "tablet": "0 0 0 0",
@@ -17,7 +17,7 @@
             "projectId": "1"
         },
         {
-            "src": "/projects/binuforti/IMG_4783-Edit.jpg",
+            "src": "/projects/binuforti/binuforti-img-1.jpg",
             "margin": {
                 "desktop": "-15% 0 0 60%",
                 "tablet": "-10% 0 0 auto",
@@ -33,7 +33,7 @@
             "projectId": "2"
         },
         {
-            "src": "/projects/s-anei/_MG_3221-Edit.jpg",
+            "src": "/projects/s-anei/s-anei-img-2.jpg",
             "margin": {
                 "desktop": "0 0 0 10%",
                 "tablet": "15% 15% -10% 10%",
@@ -49,7 +49,7 @@
             "projectId": "3"
         },
         {
-            "src": "/projects/su-trobasciu/IMG_3883 2.jpg",
+            "src": "/projects/su-trobasciu/su-trobasciu-img-8.jpg",
             "margin": {
                 "desktop": "-10% 0 0 auto",
                 "tablet": "20% 0 0 auto",
@@ -65,11 +65,11 @@
             "projectId": "4"
         },
         {
-            "src": "/projects/10-days-parte-montis/_MG_8831.jpg",
+            "src": "/projects/10-days-parte-montis/10-days-parte-montis-img-7.jpg",
             "margin": {
                 "desktop": "-10% 0 0 auto",
                 "tablet": "-10% 0 0 10%",
-                "mobile": "0 0 10% auto"
+                "mobile": "0 0 10% 0"
             },
             "backgroundColor": "#CB6CE6",
             "width": {
@@ -81,7 +81,7 @@
             "projectId": "5"
         },
         {
-            "src": "/projects/su-trobasciu/BAG 1.png",
+            "src": "/projects/design/design-img-1.png",
             "margin": {
                 "desktop": "-10% 0 0 auto",
                 "tablet": "20% 0 0 auto",

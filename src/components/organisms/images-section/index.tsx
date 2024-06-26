@@ -2,23 +2,30 @@ import { useScroll } from "framer-motion";
 import MainLogo from "../../molecules/main-logo";
 import data from "../../../../public/data/images.json";
 import AnimatedImage from "../animated-image";
-export interface AnimationObject {
-  src: string;
-  margin: {
-    desktop: string;
-    tablet: string;
-    mobile: string;
-  };
-  backgroundColor: string;
-  width: {
-    desktop: string;
-    tablet: string;
-    mobile: string;
-  };
-}
+import { useEffect, useState } from "react";
+import useLoadingStore from "../../../core/store/loading.store";
 
 const ImagesContainer: React.FC = () => {
   const { scrollY } = useScroll();
+  const { setLoading } = useLoadingStore((store) => store);
+  const [resourcesLoaded, setResourcesLoaded] = useState<boolean[]>([]);
+  const [startTime] = useState(Date.now());
+
+  const onMediaLoad = () => {
+    setResourcesLoaded((oldState) => oldState.concat([true]));
+  };
+
+  useEffect(() => {
+    if (data.imgs.length * 2 === resourcesLoaded.length) {
+      const elapsedTime = Date.now() - startTime;
+      const remainingTime = 2000 - elapsedTime;
+      if (remainingTime > 0) {
+        setTimeout(() => setLoading(false), remainingTime);
+      } else {
+        setLoading(false);
+      }
+    }
+  }, [resourcesLoaded, setLoading, startTime]);
 
   return (
     <div className="images-section">
@@ -33,6 +40,7 @@ const ImagesContainer: React.FC = () => {
             scrollY={scrollY}
             zIndex={zIndex}
             projectId={projectId}
+            onImgLoad={onMediaLoad}
           />
         )
       )}

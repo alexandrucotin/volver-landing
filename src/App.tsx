@@ -1,21 +1,17 @@
-// App.tsx
 import React from "react";
 import { ConfigProvider } from "antd";
-import AnimatedRoutes from "./core/animated-route";
+import Router from "./core/router";
 
 const App: React.FC = () => {
   return (
     <ConfigProvider
       theme={{
         token: {
-          // Seed Token
           colorPrimary: "#b0241c",
-          // Alias Token
         },
-        components: {},
       }}
     >
-      <AnimatedRoutes />
+      <Router />
     </ConfigProvider>
   );
 };

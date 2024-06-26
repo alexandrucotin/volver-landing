@@ -24,6 +24,7 @@ export interface AnimationObject {
   zIndex: number;
   scrollY: MotionValue<number>;
   projectId: string;
+  onImgLoad: () => void;
 }
 const AnimatedImage: React.FC<AnimationObject> = ({
   src,
@@ -33,8 +34,10 @@ const AnimatedImage: React.FC<AnimationObject> = ({
   scrollY,
   zIndex,
   projectId,
+  onImgLoad,
 }) => {
   const ref = useRef<HTMLDivElement>(null);
+  const overlay = useRef<HTMLDivElement>(null);
   const [elementTop, setElementTop] = useState(0);
   const [elementHeight, setElementHeight] = useState(0);
   const { responsiveWidth, responsiveMargin } = useResponsiveValues(
@@ -99,9 +102,10 @@ const AnimatedImage: React.FC<AnimationObject> = ({
         onMouseLeave={() => setIsHovered(false)}
       >
         <Link to={`/portfolio/${projectId}`} key={projectId}>
-          <img src={src} alt="" className="parallax-image" />
+          <img src={src} alt="" className="parallax-image" onLoad={onImgLoad} />
 
           <motion.div
+            ref={overlay}
             className="overlay"
             style={{
               backgroundColor,
