@@ -3,7 +3,7 @@ import LandingPage from "../../pages/landing";
 import JobDetail from "../../pages/job-details";
 import WorkInProgressPage from "../../pages/work-in-progress";
 import Auth from "../../pages/auth/auth";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import AppLayout from "../layout";
 import { AnimatePresence } from "framer-motion";
 import useLoadingStore from "../store/loading.store";
@@ -14,16 +14,6 @@ const Router: React.FC = () => {
   const [, setAuthenticated] = useState<boolean>(
     localStorage.getItem("authenticated") === "true"
   );
-
-  useEffect(() => {
-    if (isLoading) document.body.classList.add("no-scroll");
-    if (!isLoading) document.body.classList.remove("no-scroll");
-    if (
-      window.location.href.split("/")[3] === "login" ||
-      window.location.href.split("/")[3] === ""
-    )
-      document.body.classList.remove("no-scroll");
-  }, [isLoading]);
 
   const router = createBrowserRouter([
     {

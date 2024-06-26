@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 
 const GlobalLoader: React.FC = () => {
+  useEffect(() => {
+    document.body.classList.add("no-scroll");
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, []);
+
   const loaderVariants = {
     hidden: { y: "100%" },
     visible: { y: "0%" },
