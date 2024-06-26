@@ -18,6 +18,11 @@ const Router: React.FC = () => {
   useEffect(() => {
     if (isLoading) document.body.classList.add("no-scroll");
     if (!isLoading) document.body.classList.remove("no-scroll");
+    if (
+      window.location.href.split("/")[3] === "login" ||
+      window.location.href.split("/")[3] === ""
+    )
+      document.body.classList.remove("no-scroll");
   }, [isLoading]);
 
   const router = createBrowserRouter([
