@@ -15,27 +15,14 @@ const GlobalLoader: React.FC = () => {
     exit: { y: "100%" },
   };
 
-  const backgroundVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
-    exit: { opacity: 0 },
-  };
   return (
     <div className="">
-      <motion.div
-        className="background"
-        initial="hidden"
-        animate="visible"
-        exit="exit"
-        variants={backgroundVariants}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
-      ></motion.div>
       <motion.div
         initial="hidden"
         animate="visible"
         exit="exit"
         variants={loaderVariants}
-        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.5 }}
+        transition={{ duration: 0.4, ease: "easeInOut" }}
         className="global-loader"
       >
         <motion.div
