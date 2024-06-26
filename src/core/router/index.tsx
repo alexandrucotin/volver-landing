@@ -43,7 +43,11 @@ const Router: React.FC = () => {
   ]);
   return (
     <>
-      <AnimatePresence>{isLoading && <GlobalLoader />}</AnimatePresence>
+      <AnimatePresence>
+        {isLoading && window.location.href.split("/")[3] !== "" && (
+          <GlobalLoader />
+        )}
+      </AnimatePresence>
       <RouterProvider router={router} />
     </>
   );
