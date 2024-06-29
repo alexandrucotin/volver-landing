@@ -6,7 +6,7 @@ const Menu: React.FC = () => {
   return (
     <div className="navbar">
       <div className="navbar-logo-container">
-        <Link to="/landing">
+        <Link to="/">
           <img src={shortLogo} alt="" />
         </Link>
       </div>

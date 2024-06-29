@@ -13,7 +13,7 @@ const LandingPage: React.FC = () => {
   }, [setLoading]);
   return (
     <motion.div>
-      {isLoading && <motion.div className="white-page"></motion.div>}
+      {isLoading && <div className="white-page"></div>}
       <div className="landing-page">
         <ImagesSection />
         <AboutSection />

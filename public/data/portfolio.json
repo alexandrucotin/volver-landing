@@ -361,7 +361,9 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/s-anei/s-anei-img-10.jpg"
+                                "src": "/projects/s-anei/s-anei-img-11.jpg",
+                                "width": "50%",
+                                "height": "60%"
                             }
                         ],
                         "width": "50%",
@@ -371,9 +373,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/s-anei/s-anei-img-11.jpg",
-                                "width": "50%",
-                                "height": "60%"
+                                "src": "/projects/s-anei/s-anei-img-10.jpg"
                             }
                         ],
                         "width": "50%",

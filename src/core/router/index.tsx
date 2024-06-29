@@ -1,48 +1,31 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import LandingPage from "../../pages/landing";
 import JobDetail from "../../pages/job-details";
-import WorkInProgressPage from "../../pages/work-in-progress";
-import Auth from "../../pages/auth/auth";
-import { useState } from "react";
 import AppLayout from "../layout";
 import { AnimatePresence } from "framer-motion";
 import useLoadingStore from "../store/loading.store";
 import GlobalLoader from "../../components/molecules/global-loader";
+import PageNotFound from "../../pages/404";
 
 const Router: React.FC = () => {
   const { isLoading } = useLoadingStore((store) => store);
-  const [, setAuthenticated] = useState<boolean>(
-    localStorage.getItem("authenticated") === "true"
-  );
 
   const router = createBrowserRouter([
     {
-      path: "/login",
-      element: <Auth onAuthenticate={setAuthenticated} />,
-    },
-    {
       element: <AppLayout />,
       children: [
-        { path: "landing", element: <LandingPage /> },
+        { path: "/", element: <LandingPage /> },
         { path: "portfolio/:id", element: <JobDetail /> },
       ],
     },
     {
-      element: <WorkInProgressPage />,
-      path: "/",
-    },
-    {
-      element: <div>Page not found</div>,
+      element: <PageNotFound />,
       path: "/*",
     },
   ]);
   return (
     <>
-      <AnimatePresence>
-        {isLoading &&
-          window.location.href.split("/")[3] !== "" &&
-          window.location.href.split("/")[3] !== "login" && <GlobalLoader />}
-      </AnimatePresence>
+      <AnimatePresence>{isLoading && <GlobalLoader />}</AnimatePresence>
       <RouterProvider router={router} />
     </>
   );

@@ -54,7 +54,7 @@ const ContactSection: React.FC = () => {
             <Input.TextArea rows={4} placeholder="Il tuo messaggio" />
           </Form.Item>
 
-          <Form.Item>
+          <Form.Item style={{ textAlign: "center" }}>
             <Button type="primary" htmlType="submit">
               Invia
             </Button>

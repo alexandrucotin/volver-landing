@@ -1,5 +1,4 @@
 import { ScrollRestoration, Outlet, useLocation } from "react-router-dom";
-import ProtectedRoute from "../protected-route";
 import Menu from "../../components/organisms/navbar";
 import { useEffect } from "react";
 
@@ -15,11 +14,9 @@ const AppLayout: React.FC = () => {
       className=""
       style={{ maxWidth: 1440, margin: "0 auto", position: "relative" }}
     >
-      <ProtectedRoute>
-        <ScrollRestoration />
-        <Menu />
-        <Outlet />
-      </ProtectedRoute>
+      <ScrollRestoration />
+      <Menu />
+      <Outlet />
     </div>
   );
 };
