@@ -1,6 +1,7 @@
 import { ScrollRestoration, Outlet, useLocation } from "react-router-dom";
 import Menu from "../../components/organisms/navbar";
 import { useEffect } from "react";
+import Footer from "../../components/molecules/footer";
 
 const AppLayout: React.FC = () => {
   const { pathname } = useLocation();
@@ -17,6 +18,7 @@ const AppLayout: React.FC = () => {
       <ScrollRestoration />
       <Menu />
       <Outlet />
+      <Footer />
     </div>
   );
 };

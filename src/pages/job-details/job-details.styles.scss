@@ -14,7 +14,6 @@
 
 .job-detail {
   display: flex;
-  padding: 1.5rem;
   flex-direction: column;
   gap: 2.5vh;
 
@@ -28,6 +27,7 @@
   }
   &-content {
     display: grid;
+    padding: 0 1.5rem;
 
     @include breakpoint(md) {
       grid-template-columns: 30% 70%;
@@ -36,6 +36,7 @@
     &-client-title {
       font-size: 4rem;
       line-height: 1;
+      margin-bottom: 1.5rem;
 
       @include breakpoint(md) {
         margin-bottom: 0;

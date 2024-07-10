@@ -1,5 +1,6 @@
 .contact-section {
   display: grid;
+  gap: 1.5rem;
 
   @include breakpoint(lg) {
     grid-template-columns: 1fr 1fr;
@@ -10,7 +11,7 @@
 
     @include breakpoint(lg) {
       order: 2;
-      padding: 1.5rem;
+      max-height: 70vh;
     }
     img {
       object-fit: cover;
@@ -23,10 +24,17 @@
   &-form-container {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     padding: 1.5rem;
     width: 100%;
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 2rem;
+    }
 
     @include breakpoint(lg) {
       order: 1;
