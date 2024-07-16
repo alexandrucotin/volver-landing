@@ -23,12 +23,6 @@ const ContactSection: React.FC = () => {
         exit={{ opacity: 0, y: -50 }}
         transition={{ duration: 1 }}
       >
-        <h1>Mandaci una mail!</h1>
-        <p>
-          Il nostro team sapra' rispondere a tutte le tue domande e richieste.
-          Siamo specializzati in progetti di architettura, interior design e di
-          arredamento. Contattaci per un preventivo gratuito.
-        </p>
         <Form form={form} name="contact" layout="vertical" onFinish={onFinish}>
           <Form.Item
             name="name"
@@ -60,7 +54,7 @@ const ContactSection: React.FC = () => {
             <Input.TextArea rows={4} placeholder="Il tuo messaggio" />
           </Form.Item>
 
-          <Form.Item>
+          <Form.Item style={{ textAlign: "center" }}>
             <Button type="primary" htmlType="submit">
               Invia
             </Button>
