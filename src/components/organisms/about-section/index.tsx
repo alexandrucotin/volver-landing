@@ -16,7 +16,10 @@ const AboutSection: React.FC = () => {
     <div className="about-page">
       <div className="about-page-video">
         <video ref={videoRef} playsInline loop autoPlay muted controls={false}>
-          <source src="./reel.mp4" type="video/mp4" />
+          <source
+            src="https://res.cloudinary.com/dvn95pgex/video/upload/v1728319282/reel_kuva28.mp4"
+            type="video/mp4"
+          />
         </video>
         <button className="about-page-video-mute-button" onClick={toggleMute}>
           {isMuted ? "Unmute" : "Mute"}

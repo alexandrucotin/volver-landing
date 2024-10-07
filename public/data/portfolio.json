@@ -19,7 +19,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/luca-carta/luca-carta-img-01.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320529/luca-carta/luca-carta-img-01_lnzjfh.jpg"
                             }
                         ],
                         "width": "50%",
@@ -29,7 +29,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/luca-carta/luca-carta-img-02.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320529/luca-carta/luca-carta-img-02_m5hxb6.jpg"
                             }
                         ],
                         "width": "50%",
@@ -41,7 +41,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/luca-carta/luca-carta-img-04.png"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320526/luca-carta/luca-carta-img-04_gteyp1.png"
                             }
                         ],
                         "width": "50%",
@@ -51,7 +51,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/luca-carta/luca-carta-img-05.png"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320526/luca-carta/luca-carta-img-05_x0yclr.png"
                             }
                         ],
                         "width": "50%",
@@ -63,7 +63,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/luca-carta/luca-carta-merch.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320527/luca-carta/luca-carta-merch_rdstjv.jpg"
                             }
                         ],
                         "width": "100%",
@@ -75,7 +75,7 @@
                         "items": [
                             {
                                 "type": "video",
-                                "src": "/projects/luca-carta/luca-carta-reel.mp4",
+                                "src": "https://res.cloudinary.com/dvn95pgex/video/upload/v1728320532/luca-carta/luca-carta-reel_qfyjfr.mp4",
                                 "unmute": true
                             }
                         ],
@@ -88,7 +88,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/luca-carta/luca-carta-img-03.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320530/luca-carta/luca-carta-img-03_pjnis6.jpg"
                             }
                         ],
                         "width": "50%",
@@ -98,7 +98,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/luca-carta/luca-carta-img-06.png"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320525/luca-carta/luca-carta-img-06_rwu6wz.png"
                             }
                         ],
                         "width": "50%",
@@ -126,7 +126,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/binuforti/binuforti-img-1.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320655/Binuforti/binuforti-img-1_qovdfb.jpg"
                             }
                         ],
                         "width": "50%",
@@ -136,7 +136,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/binuforti/binuforti-img-2.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320656/Binuforti/binuforti-img-2_cvuraa.jpg"
                             }
                         ],
                         "width": "50%",
@@ -148,7 +148,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/binuforti/binuforti-img-3.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320657/Binuforti/binuforti-img-3_eoivgo.jpg"
                             }
                         ],
                         "width": "50%",
@@ -158,7 +158,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/binuforti/binuforti-img-4.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320658/Binuforti/binuforti-img-4_v3yeuv.jpg"
                             }
                         ],
                         "width": "50%",
@@ -170,7 +170,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/binuforti/binuforti-img-5.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320659/Binuforti/binuforti-img-5_lzvima.jpg"
                             }
                         ],
                         "width": "50%",
@@ -180,7 +180,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/binuforti/binuforti-img-6.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320661/Binuforti/binuforti-img-6_qkbhee.jpg"
                             }
                         ],
                         "width": "50%",
@@ -192,7 +192,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/binuforti/binuforti-img-7.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320660/Binuforti/binuforti-img-7_dkbt1u.jpg"
                             }
                         ],
                         "width": "50%",
@@ -202,7 +202,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/binuforti/binuforti-img-8.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320663/Binuforti/binuforti-img-8_phjeol.jpg"
                             }
                         ],
                         "width": "50%",
@@ -214,7 +214,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/binuforti/binuforti-img-9.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320664/Binuforti/binuforti-img-9_x0m8xy.jpg"
                             }
                         ],
                         "width": "50%",
@@ -224,7 +224,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/binuforti/binuforti-img-10.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320665/Binuforti/binuforti-img-10_bsd8zz.jpg"
                             }
                         ],
                         "width": "50%",
@@ -261,7 +261,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/s-anei/s-anei-img-1.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320879/s-anei/s-anei-img-1_qja6oe.jpg"
                             }
                         ],
                         "width": "100%",
@@ -273,7 +273,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/s-anei/s-anei-img-2.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320881/s-anei/s-anei-img-2_mq2srf.jpg"
                             }
                         ],
                         "width": "100%",
@@ -285,7 +285,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/s-anei/s-anei-img-3.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320876/s-anei/s-anei-img-3_zl4gg4.jpg"
                             }
                         ],
                         "width": "100%",
@@ -297,7 +297,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/s-anei/s-anei-img-4.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320883/s-anei/s-anei-img-4_k8oadb.jpg"
                             }
                         ],
                         "width": "100%",
@@ -309,7 +309,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/s-anei/s-anei-img-5.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320882/s-anei/s-anei-img-5_ofapep.jpg"
                             }
                         ],
                         "width": "70%",
@@ -319,7 +319,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/s-anei/s-anei-img-6.jpg",
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320878/s-anei/s-anei-img-6_jqusi9.jpg",
                                 "height": "80%",
                                 "margin": "0 20px"
                             }
@@ -333,7 +333,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/s-anei/s-anei-img-7.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320886/s-anei/s-anei-img-7_kssdnj.jpg"
                             }
                         ],
                         "width": "70%",
@@ -343,12 +343,12 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/s-anei/s-anei-img-8.jpg",
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320889/s-anei/s-anei-img-8_orxzy4.jpg",
                                 "height": "50%"
                             },
                             {
                                 "type": "image",
-                                "src": "/projects/s-anei/s-anei-img-9.jpg",
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320887/s-anei/s-anei-img-9_xfameq.jpg",
                                 "height": "50%"
                             }
                         ],
@@ -361,7 +361,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/s-anei/s-anei-img-11.jpg",
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320890/s-anei/s-anei-img-11_a1rvey.jpg",
                                 "width": "50%",
                                 "height": "60%"
                             }
@@ -373,7 +373,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/s-anei/s-anei-img-10.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320886/s-anei/s-anei-img-10_xsrimj.jpg"
                             }
                         ],
                         "width": "50%",
@@ -401,7 +401,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/su-trobasciu/su-trobasciu-img-1.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320189/su-trobasciu/su-trobasciu-img-1_famwa5.jpg"
                             }
                         ],
                         "width": "100%",
@@ -413,7 +413,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/su-trobasciu/su-trobasciu-img-2.jpeg",
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320190/su-trobasciu/su-trobasciu-img-2_gg8dam.jpg",
                                 "height": "95%",
                                 "margin": "auto 0 auto 0"
                             }
@@ -425,7 +425,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/su-trobasciu/su-trobasciu-img-3.jpg",
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320191/su-trobasciu/su-trobasciu-img-3_wrk4kz.jpg",
                                 "width": "80%",
                                 "height": "80%",
                                 "objectPosition": "right"
@@ -440,7 +440,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/su-trobasciu/su-trobasciu-img-4.jpg",
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320186/su-trobasciu/su-trobasciu-img-4_i7eqbx.jpg",
                                 "margin": "0 0 40px 0",
                                 "height": "calc( 100% - 40px )"
                             }
@@ -454,7 +454,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/su-trobasciu/su-trobasciu-img-5.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320186/su-trobasciu/su-trobasciu-img-5_luetbf.jpg"
                             }
                         ],
                         "width": "100%",
@@ -466,7 +466,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/su-trobasciu/su-trobasciu-img-6.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320187/su-trobasciu/su-trobasciu-img-6_dxypj0.jpg"
                             }
                         ],
                         "width": "100%",
@@ -478,7 +478,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/su-trobasciu/su-trobasciu-img-7.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320185/su-trobasciu/su-trobasciu-img-7_oma5yd.jpg"
                             }
                         ],
                         "width": "100%",
@@ -490,7 +490,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/su-trobasciu/su-trobasciu-img-8.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320188/su-trobasciu/su-trobasciu-img-8_qwkoii.jpg"
                             }
                         ],
                         "width": "50%",
@@ -500,7 +500,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/su-trobasciu/su-trobasciu-img-9.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320188/su-trobasciu/su-trobasciu-img-9_ofe8p1.jpg"
                             }
                         ],
                         "width": "50%",
@@ -511,7 +511,7 @@
         },
         {
             "id": "5",
-            "headerVideo": "/projects/10-days-parte-montis/sito volver - parte 10days (3).mp4",
+            "headerVideo": "https://res.cloudinary.com/dvn95pgex/video/upload/v1728319841/10-days-parte-montis/sito_volver_-_parte_10days_3_uixzkl.mp4",
             "title": "10 days in Parte Montis",
             "description": [
                 "10 days in Parte Montis è un progetto di innovazione digitale per il patrimonio culturale realizzato da Volver Studio.",
@@ -529,7 +529,7 @@
                         "items": [
                             {
                                 "type": "video",
-                                "src": "/projects/10-days-parte-montis/forme-10-days.mp4"
+                                "src": "https://res.cloudinary.com/dvn95pgex/video/upload/v1728319843/10-days-parte-montis/forme-10-days_ppb4cp.mp4"
                             }
                         ],
                         "width": "100%",
@@ -541,7 +541,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/10-days-parte-montis/10-days-parte-montis-img-1.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728319836/10-days-parte-montis/10-days-parte-montis-img-1_req0dd.jpg"
                             }
                         ],
                         "width": "33.33%",
@@ -551,7 +551,7 @@
                         "items": [
                             {
                                 "type": "video",
-                                "src": "/projects/10-days-parte-montis/video-1.mp4"
+                                "src": "https://res.cloudinary.com/dvn95pgex/video/upload/v1728319844/10-days-parte-montis/video-1_vrklwh.mp4"
                             }
                         ],
                         "width": "33.33%",
@@ -561,7 +561,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/10-days-parte-montis/10-days-parte-montis-img-2.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728319837/10-days-parte-montis/10-days-parte-montis-img-2_zvwkyn.jpg"
                             }
                         ],
                         "width": "33.33%",
@@ -573,7 +573,7 @@
                         "items": [
                             {
                                 "type": "video",
-                                "src": "/projects/10-days-parte-montis/video-3.mp4"
+                                "src": "https://res.cloudinary.com/dvn95pgex/video/upload/v1728319840/10-days-parte-montis/video-3_vkckeq.mp4"
                             }
                         ],
                         "width": "33.33%",
@@ -583,7 +583,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/10-days-parte-montis/10-days-parte-montis-img-3.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728319837/10-days-parte-montis/10-days-parte-montis-img-3_gd1zjb.jpg"
                             }
                         ],
                         "width": "33.33%",
@@ -593,7 +593,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/10-days-parte-montis/10-days-parte-montis-img-4.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728319838/10-days-parte-montis/10-days-parte-montis-img-4_crfn6k.jpg"
                             }
                         ],
                         "width": "33.33%",
@@ -605,7 +605,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/10-days-parte-montis/10-days-parte-montis-img-5.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728319838/10-days-parte-montis/10-days-parte-montis-img-5_a6dou8.jpg"
                             }
                         ],
                         "width": "33.33%",
@@ -615,7 +615,7 @@
                         "items": [
                             {
                                 "type": "video",
-                                "src": "/projects/10-days-parte-montis/video-2.mp4"
+                                "src": "https://res.cloudinary.com/dvn95pgex/video/upload/v1728319844/10-days-parte-montis/video-2_e7xhmo.mp4"
                             }
                         ],
                         "width": "33.33%",
@@ -625,7 +625,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/10-days-parte-montis/10-days-parte-montis-img-6.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728319839/10-days-parte-montis/10-days-parte-montis-img-6_t2jagd.jpg"
                             }
                         ],
                         "width": "33.33%",
@@ -647,7 +647,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/design/design-img-2.jpg",
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728321105/design/design-img-2_tmfu9x.jpg",
                                 "width": "auto",
                                 "objectFit": "contain",
                                 "objectPosition": "right"
@@ -663,7 +663,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/design/design-img-1.png"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728321110/design/design-img-1_njrjvf.png"
                             }
                         ],
                         "width": "100%",
@@ -675,7 +675,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/design/design-img-3.jpg",
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728321107/design/design-img-3_ncvemu.jpg",
                                 "width": "auto"
                             }
                         ],
@@ -688,7 +688,7 @@
                         "items": [
                             {
                                 "type": "image",
-                                "src": "/projects/design/design-img-4.jpg"
+                                "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728321109/design/design-img-4_demepo.jpg"
                             }
                         ],
                         "width": "100%",

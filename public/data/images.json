@@ -1,7 +1,7 @@
 {
     "imgs": [
         {
-            "src": "/projects/luca-carta/luca-carta-merch.jpg",
+            "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320527/luca-carta/luca-carta-merch_rdstjv.jpg",
             "margin": {
                 "desktop": "0 0 0 0",
                 "tablet": "0 0 0 0",
@@ -17,7 +17,7 @@
             "projectId": "1"
         },
         {
-            "src": "/projects/binuforti/binuforti-img-1.jpg",
+            "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320655/Binuforti/binuforti-img-1_qovdfb.jpg",
             "margin": {
                 "desktop": "-15% 0 0 60%",
                 "tablet": "-10% 0 0 auto",
@@ -33,7 +33,7 @@
             "projectId": "2"
         },
         {
-            "src": "/projects/s-anei/s-anei-img-2.jpg",
+            "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320881/s-anei/s-anei-img-2_mq2srf.jpg",
             "margin": {
                 "desktop": "0 0 0 10%",
                 "tablet": "15% 15% -10% 10%",
@@ -49,7 +49,7 @@
             "projectId": "3"
         },
         {
-            "src": "/projects/su-trobasciu/su-trobasciu-img-8.jpg",
+            "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728320188/su-trobasciu/su-trobasciu-img-8_qwkoii.jpg",
             "margin": {
                 "desktop": "-10% 0 0 auto",
                 "tablet": "20% 0 0 auto",
@@ -65,7 +65,7 @@
             "projectId": "4"
         },
         {
-            "src": "/projects/10-days-parte-montis/10-days-parte-montis-img-7.jpg",
+            "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728319838/10-days-parte-montis/10-days-parte-montis-img-7_novdh7.jpg",
             "margin": {
                 "desktop": "-10% 0 0 auto",
                 "tablet": "-10% 0 0 10%",
@@ -81,7 +81,7 @@
             "projectId": "5"
         },
         {
-            "src": "/projects/design/design-img-1.png",
+            "src": "https://res.cloudinary.com/dvn95pgex/image/upload/v1728321110/design/design-img-1_njrjvf.png",
             "margin": {
                 "desktop": "-10% 0 0 auto",
                 "tablet": "20% 0 0 auto",
