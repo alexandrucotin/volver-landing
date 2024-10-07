@@ -17,7 +17,7 @@ const AboutSection: React.FC = () => {
       <div className="about-page-video">
         <video ref={videoRef} playsInline loop autoPlay muted controls={false}>
           <source
-            src="https://res.cloudinary.com/dvn95pgex/video/upload/v1728319282/reel_kuva28.mp4"
+            src="https://res.cloudinary.com/dvn95pgex/video/upload/f_auto:video,q_auto/reel_kuva28"
             type="video/mp4"
           />
         </video>
